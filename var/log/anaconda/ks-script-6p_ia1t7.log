@@ -1,0 +1,3 @@
+Restoring SElinux contexts...
+/tmp/ks-script-6p_ia1t7: line 12: restorecon: command not found
+Finished.
