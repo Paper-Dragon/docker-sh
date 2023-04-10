@@ -1,0 +1,341 @@
+07:46:23,714 DBG dnf: User-Agent: constructed: 'libdnf (Fedora Linux 36; generic; Linux.x86_64)'
+07:46:23,776 DDEBUG dnf: Getting group metadata
+07:46:23,776 DDEBUG dnf: timer: loading comps: 0 ms
+07:46:23,805 DDEBUG dnf: Cleaning up.
+07:46:23,807 DBG dnf: User-Agent: constructed: 'libdnf (Fedora Linux 36; generic; Linux.x86_64)'
+07:46:23,809 DDEBUG dnf: Getting group metadata
+07:46:23,809 DDEBUG dnf: timer: loading comps: 0 ms
+07:46:27,936 INF packaging: Configuring the base repo
+07:46:27,975 DBG packaging: Using the repo configuration: RepoConfigurationData(cost=1000, excluded_packages=[], included_packages=[], name='anaconda-0', proxy='', ssl_configuration=SSLConfigurationData(ca_cert_path='', client_cert_path='', client_key_path=''), ssl_verification_enabled=True, type='BASEURL', url='https://kojipkgs.fedoraproject.org/compose/36/latest-Fedora-36/compose/Everything/x86_64/os/')
+07:46:28,144 DBG dnf: repo: downloading from remote: anaconda
+07:46:31,836 DBG packaging: repo koji-override-0: mirrorlist None, baseurl https://kojipkgs.fedoraproject.org/compose/36/latest-Fedora-36/compose/Everything/x86_64/os/, metalink False
+07:46:31,837 DBG packaging: repo koji-override-1: mirrorlist None, baseurl https://kojipkgs.fedoraproject.org/compose/updates/f36-updates/compose/Everything/x86_64/os/, metalink False
+07:46:31,839 DBG dnf: repo: downloading from remote: koji-override-0
+07:46:33,181 DBG dnf: repo: downloading from remote: koji-override-1
+07:46:35,271 DBG dnf: repo: using cache for: anaconda
+07:46:35,271 DBG packaging: repo anaconda: _sync_metadata success from ['https://kojipkgs.fedoraproject.org/compose/36/latest-Fedora-36/compose/Everything/x86_64/os/']
+07:46:35,272 DBG dnf: repo: using cache for: koji-override-0
+07:46:35,272 DBG packaging: repo koji-override-0: _sync_metadata success from ['https://kojipkgs.fedoraproject.org/compose/36/latest-Fedora-36/compose/Everything/x86_64/os/']
+07:46:35,272 DBG dnf: repo: using cache for: koji-override-1
+07:46:35,272 DBG packaging: repo koji-override-1: _sync_metadata success from ['https://kojipkgs.fedoraproject.org/compose/updates/f36-updates/compose/Everything/x86_64/os/']
+07:46:35,273 DBG dnf: repo: using cache for: anaconda
+07:46:59,476 DBG dnf: anaconda: using metadata from Wed 04 May 2022 09:16:11 PM UTC.
+07:46:59,476 DBG dnf: repo: using cache for: koji-override-0
+07:47:22,758 DBG dnf: koji-override-0: using metadata from Wed 04 May 2022 09:16:11 PM UTC.
+07:47:22,759 DBG dnf: repo: using cache for: koji-override-1
+07:48:03,028 DBG dnf: koji-override-1: using metadata from Sun 12 Mar 2023 01:17:47 AM UTC.
+07:48:03,032 INF dnf: Last metadata expiration check: 0:00:29 ago on Sun 12 Mar 2023 07:46:34 AM UTC.
+07:48:03,043 DBG dnf: User-Agent: constructed: 'libdnf (Fedora Linux 36; generic; Linux.x86_64)'
+07:48:03,055 DDEBUG dnf: timer: sack setup: 87782 ms
+07:48:03,055 DDEBUG dnf: Getting group metadata
+07:48:03,056 DDEBUG dnf: Adding group file from repository: anaconda
+07:48:03,116 DDEBUG dnf: Adding group file from repository: koji-override-0
+07:48:03,224 DDEBUG dnf: Adding group file from repository: koji-override-1
+07:48:03,404 DDEBUG dnf: timer: loading comps: 348 ms
+07:48:09,490 DDEBUG dnf: timer: depsolve: 37 ms
+07:48:14,790 DDEBUG dnf: timer: depsolve: 44 ms
+07:48:15,987 INF dnf: Running transaction check
+07:48:16,110 INF dnf: Transaction check succeeded.
+07:48:16,110 INF dnf: Running transaction test
+07:48:17,337 INF dnf: Transaction test succeeded.
+07:48:17,337 DDEBUG dnf: timer: transaction test: 1226 ms
+07:48:17,338 INF dnf: Running transaction
+07:48:17,339 DBG dnf: RPMDB altered outside of DNF.
+07:48:18,367 DDEBUG dnf: RPM transaction start.
+07:48:27,420 DDEBUG dnf: RPM transaction over.
+07:48:27,598 DDEBUG dnf: timer: verify transaction: 174 ms
+07:48:27,599 DDEBUG dnf: timer: transaction: 10261 ms
+07:48:27,632 DBG dnf: Installed: alternatives-1.21-1.fc36.x86_64
+07:48:27,633 DBG dnf: Installed: audit-libs-3.1-2.fc36.x86_64
+07:48:27,633 DBG dnf: Installed: authselect-1.4.0-1.fc36.x86_64
+07:48:27,633 DBG dnf: Installed: authselect-libs-1.4.0-1.fc36.x86_64
+07:48:27,633 DBG dnf: Installed: basesystem-11-13.fc36.noarch
+07:48:27,633 DBG dnf: Installed: bash-5.2.15-1.fc36.x86_64
+07:48:27,633 DBG dnf: Installed: bzip2-libs-1.0.8-11.fc36.x86_64
+07:48:27,634 DBG dnf: Installed: ca-certificates-2023.2.60-1.0.fc36.noarch
+07:48:27,634 DBG dnf: Installed: coreutils-9.0-9.fc36.x86_64
+07:48:27,634 DBG dnf: Installed: coreutils-common-9.0-9.fc36.x86_64
+07:48:27,634 DBG dnf: Installed: cracklib-2.9.6-28.fc36.x86_64
+07:48:27,634 DBG dnf: Installed: crypto-policies-20220428-1.gitdfb10ea.fc36.noarch
+07:48:27,634 DBG dnf: Installed: curl-7.82.0-13.fc36.x86_64
+07:48:27,634 DBG dnf: Installed: cyrus-sasl-lib-2.1.27-18.fc36.x86_64
+07:48:27,634 DBG dnf: Installed: dnf-4.14.0-1.fc36.noarch
+07:48:27,634 DBG dnf: Installed: dnf-data-4.14.0-1.fc36.noarch
+07:48:27,635 DBG dnf: Installed: elfutils-default-yama-scope-0.188-3.fc36.noarch
+07:48:27,635 DBG dnf: Installed: elfutils-libelf-0.188-3.fc36.x86_64
+07:48:27,635 DBG dnf: Installed: elfutils-libs-0.188-3.fc36.x86_64
+07:48:27,635 DBG dnf: Installed: expat-2.5.0-1.fc36.x86_64
+07:48:27,635 DBG dnf: Installed: fedora-gpg-keys-36-5.noarch
+07:48:27,635 DBG dnf: Installed: fedora-release-common-36-21.noarch
+07:48:27,635 DBG dnf: Installed: fedora-release-container-36-21.noarch
+07:48:27,635 DBG dnf: Installed: fedora-release-identity-container-36-21.noarch
+07:48:27,636 DBG dnf: Installed: fedora-repos-36-5.noarch
+07:48:27,636 DBG dnf: Installed: fedora-repos-modular-36-5.noarch
+07:48:27,636 DBG dnf: Installed: file-libs-5.41-4.fc36.x86_64
+07:48:27,636 DBG dnf: Installed: filesystem-3.18-2.fc36.x86_64
+07:48:27,636 DBG dnf: Installed: findutils-1:4.9.0-1.fc36.x86_64
+07:48:27,636 DBG dnf: Installed: gawk-5.1.1-2.fc36.x86_64
+07:48:27,636 DBG dnf: Installed: gdbm-libs-1:1.22-2.fc36.x86_64
+07:48:27,636 DBG dnf: Installed: glib2-2.72.3-1.fc36.x86_64
+07:48:27,636 DBG dnf: Installed: glibc-2.35-22.fc36.x86_64
+07:48:27,637 DBG dnf: Installed: glibc-common-2.35-22.fc36.x86_64
+07:48:27,637 DBG dnf: Installed: glibc-minimal-langpack-2.35-22.fc36.x86_64
+07:48:27,637 DBG dnf: Installed: gmp-1:6.2.1-2.fc36.x86_64
+07:48:27,637 DBG dnf: Installed: gnupg2-2.3.7-3.fc36.x86_64
+07:48:27,637 DBG dnf: Installed: gnutls-3.7.8-3.fc36.x86_64
+07:48:27,637 DBG dnf: Installed: gpgme-1.17.0-4.fc36.x86_64
+07:48:27,637 DBG dnf: Installed: grep-3.7-2.fc36.x86_64
+07:48:27,637 DBG dnf: Installed: gzip-1.11-3.fc36.x86_64
+07:48:27,637 DBG dnf: Installed: ima-evm-utils-1.4-5.fc36.x86_64
+07:48:27,638 DBG dnf: Installed: json-c-0.15-3.fc36.x86_64
+07:48:27,638 DBG dnf: Installed: keyutils-libs-1.6.1-4.fc36.x86_64
+07:48:27,638 DBG dnf: Installed: krb5-libs-1.19.2-12.fc36.x86_64
+07:48:27,638 DBG dnf: Installed: libacl-2.3.1-3.fc36.x86_64
+07:48:27,638 DBG dnf: Installed: libarchive-3.5.3-3.fc36.x86_64
+07:48:27,638 DBG dnf: Installed: libassuan-2.5.5-4.fc36.x86_64
+07:48:27,638 DBG dnf: Installed: libattr-2.5.1-4.fc36.x86_64
+07:48:27,638 DBG dnf: Installed: libblkid-2.38-1.fc36.x86_64
+07:48:27,639 DBG dnf: Installed: libbrotli-1.0.9-7.fc36.x86_64
+07:48:27,639 DBG dnf: Installed: libcap-2.48-4.fc36.x86_64
+07:48:27,639 DBG dnf: Installed: libcap-ng-0.8.3-1.fc36.x86_64
+07:48:27,639 DBG dnf: Installed: libcom_err-1.46.5-2.fc36.x86_64
+07:48:27,639 DBG dnf: Installed: libcomps-0.1.18-2.fc36.x86_64
+07:48:27,639 DBG dnf: Installed: libcurl-7.82.0-13.fc36.x86_64
+07:48:27,639 DBG dnf: Installed: libdb-5.3.28-51.fc36.x86_64
+07:48:27,639 DBG dnf: Installed: libdnf-0.68.0-1.fc36.x86_64
+07:48:27,639 DBG dnf: Installed: libeconf-0.4.0-3.fc36.x86_64
+07:48:27,640 DBG dnf: Installed: libevent-2.1.12-6.fc36.x86_64
+07:48:27,640 DBG dnf: Installed: libffi-3.4.2-8.fc36.x86_64
+07:48:27,640 DBG dnf: Installed: libfsverity-1.4-7.fc36.x86_64
+07:48:27,640 DBG dnf: Installed: libgcc-12.2.1-4.fc36.x86_64
+07:48:27,640 DBG dnf: Installed: libgcrypt-1.10.1-3.fc36.x86_64
+07:48:27,640 DBG dnf: Installed: libgomp-12.2.1-4.fc36.x86_64
+07:48:27,640 DBG dnf: Installed: libgpg-error-1.45-1.fc36.x86_64
+07:48:27,640 DBG dnf: Installed: libidn2-2.3.4-1.fc36.x86_64
+07:48:27,640 DBG dnf: Installed: libksba-1.6.3-1.fc36.x86_64
+07:48:27,641 DBG dnf: Installed: libmodulemd-2.14.0-2.fc36.x86_64
+07:48:27,641 DBG dnf: Installed: libmount-2.38-1.fc36.x86_64
+07:48:27,641 DBG dnf: Installed: libnghttp2-1.51.0-1.fc36.x86_64
+07:48:27,641 DBG dnf: Installed: libnsl2-2.0.0-3.fc36.x86_64
+07:48:27,641 DBG dnf: Installed: libpsl-0.21.1-5.fc36.x86_64
+07:48:27,641 DBG dnf: Installed: libpwquality-1.4.4-7.fc36.x86_64
+07:48:27,641 DBG dnf: Installed: librepo-1.15.1-1.fc36.x86_64
+07:48:27,641 DBG dnf: Installed: libreport-filesystem-2.17.4-1.fc36.noarch
+07:48:27,641 DBG dnf: Installed: libselinux-3.3-4.fc36.x86_64
+07:48:27,642 DBG dnf: Installed: libsemanage-3.3-3.fc36.x86_64
+07:48:27,642 DBG dnf: Installed: libsepol-3.3-3.fc36.x86_64
+07:48:27,642 DBG dnf: Installed: libsigsegv-2.14-2.fc36.x86_64
+07:48:27,642 DBG dnf: Installed: libsmartcols-2.38-1.fc36.x86_64
+07:48:27,642 DBG dnf: Installed: libsolv-0.7.22-1.fc36.x86_64
+07:48:27,642 DBG dnf: Installed: libssh-0.9.6-4.fc36.x86_64
+07:48:27,642 DBG dnf: Installed: libssh-config-0.9.6-4.fc36.noarch
+07:48:27,642 DBG dnf: Installed: libstdc++-12.2.1-4.fc36.x86_64
+07:48:27,642 DBG dnf: Installed: libtasn1-4.19.0-1.fc36.x86_64
+07:48:27,643 DBG dnf: Installed: libtirpc-1.3.3-0.fc36.x86_64
+07:48:27,643 DBG dnf: Installed: libunistring-1.0-1.fc36.x86_64
+07:48:27,643 DBG dnf: Installed: libuuid-2.38-1.fc36.x86_64
+07:48:27,643 DBG dnf: Installed: libverto-0.3.2-3.fc36.x86_64
+07:48:27,643 DBG dnf: Installed: libxcrypt-4.4.33-4.fc36.x86_64
+07:48:27,643 DBG dnf: Installed: libxml2-2.10.3-2.fc36.x86_64
+07:48:27,643 DBG dnf: Installed: libyaml-0.2.5-7.fc36.x86_64
+07:48:27,643 DBG dnf: Installed: libzstd-1.5.4-1.fc36.x86_64
+07:48:27,644 DBG dnf: Installed: lua-libs-5.4.4-9.fc36.x86_64
+07:48:27,644 DBG dnf: Installed: lz4-libs-1.9.3-4.fc36.x86_64
+07:48:27,644 DBG dnf: Installed: mpdecimal-2.5.1-3.fc36.x86_64
+07:48:27,644 DBG dnf: Installed: mpfr-4.1.0-9.fc36.x86_64
+07:48:27,644 DBG dnf: Installed: ncurses-base-6.2-9.20210508.fc36.noarch
+07:48:27,644 DBG dnf: Installed: ncurses-libs-6.2-9.20210508.fc36.x86_64
+07:48:27,644 DBG dnf: Installed: nettle-3.8-1.fc36.x86_64
+07:48:27,644 DBG dnf: Installed: npth-1.6-8.fc36.x86_64
+07:48:27,644 DBG dnf: Installed: openldap-2.6.3-1.fc36.x86_64
+07:48:27,645 DBG dnf: Installed: openssl-libs-1:3.0.8-1.fc36.x86_64
+07:48:27,645 DBG dnf: Installed: p11-kit-0.24.1-2.fc36.x86_64
+07:48:27,645 DBG dnf: Installed: p11-kit-trust-0.24.1-2.fc36.x86_64
+07:48:27,645 DBG dnf: Installed: pam-1.5.2-13.fc36.x86_64
+07:48:27,645 DBG dnf: Installed: pam-libs-1.5.2-13.fc36.x86_64
+07:48:27,645 DBG dnf: Installed: pcre-8.45-1.fc36.1.x86_64
+07:48:27,645 DBG dnf: Installed: pcre2-10.40-1.fc36.x86_64
+07:48:27,645 DBG dnf: Installed: pcre2-syntax-10.40-1.fc36.noarch
+07:48:27,645 DBG dnf: Installed: popt-1.18-7.fc36.x86_64
+07:48:27,646 DBG dnf: Installed: publicsuffix-list-dafsa-20210518-4.fc36.noarch
+07:48:27,646 DBG dnf: Installed: python-pip-wheel-21.3.1-4.fc36.noarch
+07:48:27,646 DBG dnf: Installed: python-setuptools-wheel-59.6.0-3.fc36.noarch
+07:48:27,646 DBG dnf: Installed: python3-3.10.10-1.fc36.x86_64
+07:48:27,646 DBG dnf: Installed: python3-dnf-4.14.0-1.fc36.noarch
+07:48:27,646 DBG dnf: Installed: python3-gpg-1.17.0-4.fc36.x86_64
+07:48:27,646 DBG dnf: Installed: python3-hawkey-0.68.0-1.fc36.x86_64
+07:48:27,646 DBG dnf: Installed: python3-libcomps-0.1.18-2.fc36.x86_64
+07:48:27,646 DBG dnf: Installed: python3-libdnf-0.68.0-1.fc36.x86_64
+07:48:27,647 DBG dnf: Installed: python3-libs-3.10.10-1.fc36.x86_64
+07:48:27,647 DBG dnf: Installed: python3-rpm-4.17.1-3.fc36.x86_64
+07:48:27,647 DBG dnf: Installed: readline-8.2-2.fc36.x86_64
+07:48:27,647 DBG dnf: Installed: rootfiles-8.1-31.fc36.noarch
+07:48:27,647 DBG dnf: Installed: rpm-4.17.1-3.fc36.x86_64
+07:48:27,647 DBG dnf: Installed: rpm-build-libs-4.17.1-3.fc36.x86_64
+07:48:27,647 DBG dnf: Installed: rpm-libs-4.17.1-3.fc36.x86_64
+07:48:27,647 DBG dnf: Installed: rpm-sign-libs-4.17.1-3.fc36.x86_64
+07:48:27,648 DBG dnf: Installed: sed-4.8-10.fc36.x86_64
+07:48:27,648 DBG dnf: Installed: setup-2.14.1-1.fc36.noarch
+07:48:27,648 DBG dnf: Installed: shadow-utils-2:4.11.1-5.fc36.x86_64
+07:48:27,648 DBG dnf: Installed: sqlite-libs-3.36.0-5.fc36.x86_64
+07:48:27,648 DBG dnf: Installed: sudo-1.9.12-2.p2.fc36.x86_64
+07:48:27,648 DBG dnf: Installed: systemd-libs-250.10-2.fc36.x86_64
+07:48:27,648 DBG dnf: Installed: tar-2:1.34-3.fc36.x86_64
+07:48:27,648 DBG dnf: Installed: tpm2-tss-3.2.2-1.fc36.x86_64
+07:48:27,648 DBG dnf: Installed: tzdata-2022g-1.fc36.noarch
+07:48:27,649 DBG dnf: Installed: util-linux-core-2.38-1.fc36.x86_64
+07:48:27,649 DBG dnf: Installed: vim-data-2:9.0.1307-1.fc36.noarch
+07:48:27,649 DBG dnf: Installed: vim-minimal-2:9.0.1307-1.fc36.x86_64
+07:48:27,649 DBG dnf: Installed: xz-libs-5.4.1-1.fc36.x86_64
+07:48:27,649 DBG dnf: Installed: yum-4.14.0-1.fc36.noarch
+07:48:27,649 DBG dnf: Installed: zchunk-libs-1.2.3-1.fc36.x86_64
+07:48:27,649 DBG dnf: Installed: zlib-1.2.11-33.fc36.x86_64
+07:48:27,651 DDEBUG dnf: Cleaning up.
+07:48:27,656 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/vim-minimal-9.0.1307-1.fc36.x86_64.rpm removed
+07:48:27,656 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/python3-hawkey-0.68.0-1.fc36.x86_64.rpm removed
+07:48:27,656 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/tpm2-tss-3.2.2-1.fc36.x86_64.rpm removed
+07:48:27,656 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/fedora-release-identity-container-36-21.noarch.rpm removed
+07:48:27,656 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/libidn2-2.3.4-1.fc36.x86_64.rpm removed
+07:48:27,656 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/p11-kit-trust-0.24.1-2.fc36.x86_64.rpm removed
+07:48:27,656 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/libksba-1.6.3-1.fc36.x86_64.rpm removed
+07:48:27,656 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/python3-gpg-1.17.0-4.fc36.x86_64.rpm removed
+07:48:27,656 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/libassuan-2.5.5-4.fc36.x86_64.rpm removed
+07:48:27,656 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/fedora-release-common-36-21.noarch.rpm removed
+07:48:27,657 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/glib2-2.72.3-1.fc36.x86_64.rpm removed
+07:48:27,657 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/coreutils-common-9.0-9.fc36.x86_64.rpm removed
+07:48:27,657 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/sudo-1.9.12-2.p2.fc36.x86_64.rpm removed
+07:48:27,657 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/libnsl2-2.0.0-3.fc36.x86_64.rpm removed
+07:48:27,657 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/alternatives-1.21-1.fc36.x86_64.rpm removed
+07:48:27,657 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/libgcc-12.2.1-4.fc36.x86_64.rpm removed
+07:48:27,658 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/libpwquality-1.4.4-7.fc36.x86_64.rpm removed
+07:48:27,658 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/zlib-1.2.11-33.fc36.x86_64.rpm removed
+07:48:27,658 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/libarchive-3.5.3-3.fc36.x86_64.rpm removed
+07:48:27,658 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/dnf-4.14.0-1.fc36.noarch.rpm removed
+07:48:27,658 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/curl-7.82.0-13.fc36.x86_64.rpm removed
+07:48:27,658 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/libdb-5.3.28-51.fc36.x86_64.rpm removed
+07:48:27,658 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/python3-3.10.10-1.fc36.x86_64.rpm removed
+07:48:27,658 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/libfsverity-1.4-7.fc36.x86_64.rpm removed
+07:48:27,658 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/libattr-2.5.1-4.fc36.x86_64.rpm removed
+07:48:27,658 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/fedora-repos-36-5.noarch.rpm removed
+07:48:27,658 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/findutils-4.9.0-1.fc36.x86_64.rpm removed
+07:48:27,658 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/bzip2-libs-1.0.8-11.fc36.x86_64.rpm removed
+07:48:27,658 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/libnghttp2-1.51.0-1.fc36.x86_64.rpm removed
+07:48:27,659 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/sed-4.8-10.fc36.x86_64.rpm removed
+07:48:27,659 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/rpm-sign-libs-4.17.1-3.fc36.x86_64.rpm removed
+07:48:27,659 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/fedora-gpg-keys-36-5.noarch.rpm removed
+07:48:27,659 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/pam-libs-1.5.2-13.fc36.x86_64.rpm removed
+07:48:27,659 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/gzip-1.11-3.fc36.x86_64.rpm removed
+07:48:27,659 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/rootfiles-8.1-31.fc36.noarch.rpm removed
+07:48:27,659 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/libgpg-error-1.45-1.fc36.x86_64.rpm removed
+07:48:27,659 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/lz4-libs-1.9.3-4.fc36.x86_64.rpm removed
+07:48:27,659 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/util-linux-core-2.38-1.fc36.x86_64.rpm removed
+07:48:27,659 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/filesystem-3.18-2.fc36.x86_64.rpm removed
+07:48:27,659 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/grep-3.7-2.fc36.x86_64.rpm removed
+07:48:27,659 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/ima-evm-utils-1.4-5.fc36.x86_64.rpm removed
+07:48:27,659 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/audit-libs-3.1-2.fc36.x86_64.rpm removed
+07:48:27,660 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/gmp-6.2.1-2.fc36.x86_64.rpm removed
+07:48:27,660 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/libssh-0.9.6-4.fc36.x86_64.rpm removed
+07:48:27,660 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/rpm-build-libs-4.17.1-3.fc36.x86_64.rpm removed
+07:48:27,660 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/crypto-policies-20220428-1.gitdfb10ea.fc36.noarch.rpm removed
+07:48:27,660 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/libffi-3.4.2-8.fc36.x86_64.rpm removed
+07:48:27,660 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/libsepol-3.3-3.fc36.x86_64.rpm removed
+07:48:27,660 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/libeconf-0.4.0-3.fc36.x86_64.rpm removed
+07:48:27,660 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/libpsl-0.21.1-5.fc36.x86_64.rpm removed
+07:48:27,660 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/tzdata-2022g-1.fc36.noarch.rpm removed
+07:48:27,660 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/npth-1.6-8.fc36.x86_64.rpm removed
+07:48:27,661 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/glibc-2.35-22.fc36.x86_64.rpm removed
+07:48:27,661 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/libreport-filesystem-2.17.4-1.fc36.noarch.rpm removed
+07:48:27,661 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/libxcrypt-4.4.33-4.fc36.x86_64.rpm removed
+07:48:27,661 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/gpgme-1.17.0-4.fc36.x86_64.rpm removed
+07:48:27,661 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/libverto-0.3.2-3.fc36.x86_64.rpm removed
+07:48:27,661 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/gnupg2-2.3.7-3.fc36.x86_64.rpm removed
+07:48:27,661 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/cyrus-sasl-lib-2.1.27-18.fc36.x86_64.rpm removed
+07:48:27,661 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/libyaml-0.2.5-7.fc36.x86_64.rpm removed
+07:48:27,662 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/sqlite-libs-3.36.0-5.fc36.x86_64.rpm removed
+07:48:27,662 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/libselinux-3.3-4.fc36.x86_64.rpm removed
+07:48:27,662 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/libsmartcols-2.38-1.fc36.x86_64.rpm removed
+07:48:27,662 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/popt-1.18-7.fc36.x86_64.rpm removed
+07:48:27,662 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/libtasn1-4.19.0-1.fc36.x86_64.rpm removed
+07:48:27,662 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/python3-libdnf-0.68.0-1.fc36.x86_64.rpm removed
+07:48:27,662 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/libcurl-7.82.0-13.fc36.x86_64.rpm removed
+07:48:27,662 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/bash-5.2.15-1.fc36.x86_64.rpm removed
+07:48:27,662 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/elfutils-libelf-0.188-3.fc36.x86_64.rpm removed
+07:48:27,662 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/pcre-8.45-1.fc36.1.x86_64.rpm removed
+07:48:27,663 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/python3-libcomps-0.1.18-2.fc36.x86_64.rpm removed
+07:48:27,663 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/gawk-5.1.1-2.fc36.x86_64.rpm removed
+07:48:27,663 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/pcre2-10.40-1.fc36.x86_64.rpm removed
+07:48:27,663 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/mpdecimal-2.5.1-3.fc36.x86_64.rpm removed
+07:48:27,663 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/libmodulemd-2.14.0-2.fc36.x86_64.rpm removed
+07:48:27,663 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/libdnf-0.68.0-1.fc36.x86_64.rpm removed
+07:48:27,663 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/elfutils-default-yama-scope-0.188-3.fc36.noarch.rpm removed
+07:48:27,663 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/gdbm-libs-1.22-2.fc36.x86_64.rpm removed
+07:48:27,663 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/pcre2-syntax-10.40-1.fc36.noarch.rpm removed
+07:48:27,663 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/glibc-minimal-langpack-2.35-22.fc36.x86_64.rpm removed
+07:48:27,663 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/fedora-release-container-36-21.noarch.rpm removed
+07:48:27,665 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/python3-libs-3.10.10-1.fc36.x86_64.rpm removed
+07:48:27,665 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/shadow-utils-4.11.1-5.fc36.x86_64.rpm removed
+07:48:27,665 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/elfutils-libs-0.188-3.fc36.x86_64.rpm removed
+07:48:27,665 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/libunistring-1.0-1.fc36.x86_64.rpm removed
+07:48:27,665 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/libbrotli-1.0.9-7.fc36.x86_64.rpm removed
+07:48:27,665 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/dnf-data-4.14.0-1.fc36.noarch.rpm removed
+07:48:27,665 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/libstdc++-12.2.1-4.fc36.x86_64.rpm removed
+07:48:27,665 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/vim-data-9.0.1307-1.fc36.noarch.rpm removed
+07:48:27,665 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/libgomp-12.2.1-4.fc36.x86_64.rpm removed
+07:48:27,665 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/python3-rpm-4.17.1-3.fc36.x86_64.rpm removed
+07:48:27,665 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/authselect-libs-1.4.0-1.fc36.x86_64.rpm removed
+07:48:27,666 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/coreutils-9.0-9.fc36.x86_64.rpm removed
+07:48:27,666 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/openssl-libs-3.0.8-1.fc36.x86_64.rpm removed
+07:48:27,666 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/rpm-4.17.1-3.fc36.x86_64.rpm removed
+07:48:27,666 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/systemd-libs-250.10-2.fc36.x86_64.rpm removed
+07:48:27,667 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/libgcrypt-1.10.1-3.fc36.x86_64.rpm removed
+07:48:27,667 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/libmount-2.38-1.fc36.x86_64.rpm removed
+07:48:27,667 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/python-setuptools-wheel-59.6.0-3.fc36.noarch.rpm removed
+07:48:27,667 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/file-libs-5.41-4.fc36.x86_64.rpm removed
+07:48:27,667 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/cracklib-2.9.6-28.fc36.x86_64.rpm removed
+07:48:27,667 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/gnutls-3.7.8-3.fc36.x86_64.rpm removed
+07:48:27,667 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/json-c-0.15-3.fc36.x86_64.rpm removed
+07:48:27,667 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/yum-4.14.0-1.fc36.noarch.rpm removed
+07:48:27,667 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/glibc-common-2.35-22.fc36.x86_64.rpm removed
+07:48:27,667 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/ca-certificates-2023.2.60-1.0.fc36.noarch.rpm removed
+07:48:27,667 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/libcomps-0.1.18-2.fc36.x86_64.rpm removed
+07:48:27,668 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/libcap-2.48-4.fc36.x86_64.rpm removed
+07:48:27,668 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/libzstd-1.5.4-1.fc36.x86_64.rpm removed
+07:48:27,668 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/ncurses-base-6.2-9.20210508.fc36.noarch.rpm removed
+07:48:27,668 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/keyutils-libs-1.6.1-4.fc36.x86_64.rpm removed
+07:48:27,668 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/authselect-1.4.0-1.fc36.x86_64.rpm removed
+07:48:27,668 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/tar-1.34-3.fc36.x86_64.rpm removed
+07:48:27,668 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/libcap-ng-0.8.3-1.fc36.x86_64.rpm removed
+07:48:27,668 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/zchunk-libs-1.2.3-1.fc36.x86_64.rpm removed
+07:48:27,668 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/nettle-3.8-1.fc36.x86_64.rpm removed
+07:48:27,668 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/xz-libs-5.4.1-1.fc36.x86_64.rpm removed
+07:48:27,668 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/fedora-repos-modular-36-5.noarch.rpm removed
+07:48:27,668 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/rpm-libs-4.17.1-3.fc36.x86_64.rpm removed
+07:48:27,669 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/librepo-1.15.1-1.fc36.x86_64.rpm removed
+07:48:27,669 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/basesystem-11-13.fc36.noarch.rpm removed
+07:48:27,669 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/krb5-libs-1.19.2-12.fc36.x86_64.rpm removed
+07:48:27,669 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/ncurses-libs-6.2-9.20210508.fc36.x86_64.rpm removed
+07:48:27,669 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/libsigsegv-2.14-2.fc36.x86_64.rpm removed
+07:48:27,669 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/python3-dnf-4.14.0-1.fc36.noarch.rpm removed
+07:48:27,669 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/pam-1.5.2-13.fc36.x86_64.rpm removed
+07:48:27,669 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/readline-8.2-2.fc36.x86_64.rpm removed
+07:48:27,669 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/p11-kit-0.24.1-2.fc36.x86_64.rpm removed
+07:48:27,669 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/libsolv-0.7.22-1.fc36.x86_64.rpm removed
+07:48:27,669 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/openldap-2.6.3-1.fc36.x86_64.rpm removed
+07:48:27,669 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/libblkid-2.38-1.fc36.x86_64.rpm removed
+07:48:27,669 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/libtirpc-1.3.3-0.fc36.x86_64.rpm removed
+07:48:27,670 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/libsemanage-3.3-3.fc36.x86_64.rpm removed
+07:48:27,670 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/publicsuffix-list-dafsa-20210518-4.fc36.noarch.rpm removed
+07:48:27,670 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/libevent-2.1.12-6.fc36.x86_64.rpm removed
+07:48:27,670 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/expat-2.5.0-1.fc36.x86_64.rpm removed
+07:48:27,670 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/lua-libs-5.4.4-9.fc36.x86_64.rpm removed
+07:48:27,670 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/libacl-2.3.1-3.fc36.x86_64.rpm removed
+07:48:27,670 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/setup-2.14.1-1.fc36.noarch.rpm removed
+07:48:27,670 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/mpfr-4.1.0-9.fc36.x86_64.rpm removed
+07:48:27,670 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/libcom_err-1.46.5-2.fc36.x86_64.rpm removed
+07:48:27,670 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/python-pip-wheel-21.3.1-4.fc36.noarch.rpm removed
+07:48:27,670 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/libssh-config-0.9.6-4.fc36.noarch.rpm removed
+07:48:27,670 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/libuuid-2.38-1.fc36.x86_64.rpm removed
+07:48:27,671 DDEBUG dnf: /mnt/sysroot/tmp/dnf.package.cache/libxml2-2.10.3-2.fc36.x86_64.rpm removed
+07:48:28,010 DDEBUG dnf: Cleaning up.
+07:48:28,010 INF dnf: The downloaded packages were saved in cache until the next successful transaction.
+07:48:28,010 INF dnf: You can remove cached packages by executing 'dnf clean packages'.
