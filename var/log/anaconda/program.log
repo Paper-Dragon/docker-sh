@@ -1,0 +1,148 @@
+07:52:24,834 INF program: Running... systemctl restart rsyslog
+07:52:25,367 DBG program: Return code: 0
+07:52:25,627 INF program: Running... losetup --list
+07:52:25,652 INF program: Running... auditctl -e 0
+07:52:25,667 INF program: enabled 0
+07:52:25,667 INF program: failure 1
+07:52:25,668 INF program: pid 0
+07:52:25,668 INF program: rate_limit 0
+07:52:25,668 INF program: backlog_limit 64
+07:52:25,668 INF program: lost 0
+07:52:25,668 INF program: backlog 4
+07:52:25,668 INF program: backlog_wait_time 60000
+07:52:25,668 INF program: backlog_wait_time_actual 0
+07:52:25,668 DBG program: Return code: 0
+07:52:25,670 INF program: Running... dbus-daemon --print-address --syslog --config-file=/usr/share/anaconda/dbus/anaconda-bus.conf
+07:52:36,177 INF program: Running... losetup --list
+07:52:36,216 INF program: Running... udevadm settle --timeout=300
+07:52:36,238 DBG program: Return code: 0
+07:52:36,283 INF program: Running [1] mkdosfs --help ...
+07:52:36,293 INF program: stdout[1]: mkfs.fat 4.2 (2021-01-31)
+
+07:52:36,294 INF program: stderr[1]: Usage: mkdosfs [OPTIONS] TARGET [BLOCKS]
+Create FAT filesystem in TARGET, which can be a block device or file. Use only
+up to BLOCKS 1024 byte blocks if specified. With the -C option, file TARGET will be
+created with a size of 1024 bytes times BLOCKS, which must be specified.
+
+Options:
+  -a              Disable alignment of data structures
+  -A              Toggle Atari variant of the filesystem
+  -b SECTOR       Select SECTOR as location of the FAT32 backup boot sector
+  -c              Check device for bad blocks before creating the filesystem
+  -C              Create file TARGET then create filesystem in it
+  -D NUMBER       Write BIOS drive number NUMBER to boot sector
+  -f COUNT        Create COUNT file allocation tables
+  -F SIZE         Select FAT size SIZE (12, 16 or 32)
+  -g GEOM         Select disk geometry: heads/sectors_per_track
+  -h NUMBER       Write hidden sectors NUMBER to boot sector
+  -i VOLID        Set volume ID to VOLID (a 32 bit hexadecimal number)
+  -I              Ignore and disable safety checks
+  -l FILENAME     Read bad blocks list from FILENAME
+  -m FILENAME     Replace default error message in boot block with contents of FILENAME
+  -M TYPE         Set media type in boot sector to TYPE
+  --mbr[=y|n|a]   Fill (fake) MBR table with one partition which spans whole disk
+  -n LABEL        Set volume name to LABEL (up to 11 characters long)
+  --codepage=N    use DOS codepage N to encode label (default: 850)
+  -r COUNT        Make room for at least COUNT entries in the root directory
+  -R COUNT        Set minimal number of reserved sectors to COUNT
+  -s COUNT        Set number of sectors per cluster to COUNT
+  -S SIZE         Select a sector size of SIZE (a power of two, at least 512)
+  -v              Verbose execution
+  --variant=TYPE  Select variant TYPE of filesystem (standard or Atari)
+
+  --invariant     Use constants for randomly generated or time based values
+  --offset=SECTOR Write the filesystem at a specific sector into the device file.
+  --help          Show this help message and exit
+
+07:52:36,294 INF program: ...done [1] (exit code: 0)
+07:52:36,358 INF program: Running... udevadm settle --timeout=300
+07:52:36,381 DBG program: Return code: 0
+07:52:36,435 INF program: Running... hwclock --hctosys --utc
+07:52:37,001 DBG program: Return code: 0
+07:53:55,385 INF program: Running... df --output=target,avail
+07:53:55,424 INF program: Mounted on        Avail
+07:53:55,425 INF program: /dev               4096
+07:53:55,425 INF program: /dev/shm        1997464
+07:53:55,425 INF program: /run             716712
+07:53:55,425 INF program: /run/rootfsbase       0
+07:53:55,425 INF program: /                716712
+07:53:55,425 INF program: /tmp            1642556
+07:53:55,425 DBG program: Return code: 0
+07:53:58,072 INF program: Running... systemd-detect-virt
+07:53:58,091 INF program: kvm
+07:53:58,091 DBG program: Return code: 0
+07:53:58,366 INF program: Running... df --output=target,avail
+07:53:58,382 INF program: Mounted on             Avail
+07:53:58,382 INF program: /dev                    4096
+07:53:58,382 INF program: /dev/shm             1997464
+07:53:58,382 INF program: /run                  716660
+07:53:58,382 INF program: /run/rootfsbase            0
+07:53:58,383 INF program: /                     716660
+07:53:58,383 INF program: /tmp                 1642484
+07:53:58,383 INF program: /mnt/sysroot         4793904
+07:53:58,383 INF program: /mnt/sysroot/dev/shm 1997480
+07:53:58,383 INF program: /mnt/sysroot/tmp     1997480
+07:53:58,383 DBG program: Return code: 0
+07:54:30,287 INF program: Running... uname -i
+07:54:30,314 INF program: unknown
+07:54:30,314 DBG program: Return code: 0
+07:54:30,316 INF program: Running in chroot '/mnt/sysroot'... rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-39-unknown
+07:54:30,345 INF program: error: /etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-39-unknown: import read failed(2).
+07:54:30,346 DBG program: Return code: 1
+07:54:32,929 INF program: Running in chroot '/mnt/sysroot'... /bin/sh /tmp/ks-script-nlp7qp5j
+07:54:32,995 INF program: + LANG=en_US
+07:54:32,996 INF program: + echo '%_install_langs en_US'
+07:54:32,996 INF program: + echo 'LANG="C.UTF-8"'
+07:54:32,996 INF program: + echo 'Import RPM GPG key'
+07:54:32,996 INF program: Import RPM GPG key
+07:54:32,996 INF program: ++ rpm --eval '%{?fedora}'
+07:54:32,997 INF program: + releasever=39
+07:54:32,997 INF program: + '[' -z 39 ']'
+07:54:32,997 INF program: + rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-39-primary
+07:54:32,997 INF program: + echo '# fstab intentionally empty for containers'
+07:54:32,997 INF program: + rm -f /etc/machine-id
+07:54:32,997 INF program: + touch /etc/machine-id
+07:54:32,997 INF program: + echo '# resolv placeholder'
+07:54:32,997 INF program: + chmod 644 /etc/resolv.conf
+07:54:32,997 DBG program: Return code: 0
+07:54:32,998 INF program: Running in chroot '/mnt/sysroot'... /bin/sh /tmp/ks-script-z_poh8dp
+07:54:33,022 INF program: removed directory '/var/cache/bpf'
+07:54:33,023 INF program: removed directory '/var/cache/dnf'
+07:54:33,023 INF program: removed '/var/cache/ldconfig/aux-cache'
+07:54:33,023 INF program: removed directory '/var/cache/ldconfig'
+07:54:33,023 DBG program: Return code: 0
+07:54:33,025 INF program: Running... /bin/sh /tmp/ks-script-sjqugelh
+07:54:33,048 INF program: + KEEPLANG=en_US
+07:54:33,049 INF program: + for dir in locale i18n
+07:54:33,049 INF program: + find /mnt/sysimage/usr/share/locale -mindepth 1 -maxdepth 1 -type d -not '(' -name en_US -o -name POSIX ')' -exec rm -rfv '{}' +
+07:54:33,049 INF program: removed directory '/mnt/sysimage/usr/share/locale/en/LC_MESSAGES'
+07:54:33,049 INF program: removed directory '/mnt/sysimage/usr/share/locale/en'
+07:54:33,049 INF program: removed directory '/mnt/sysimage/usr/share/locale/en@hebrew/LC_MESSAGES'
+07:54:33,049 INF program: removed directory '/mnt/sysimage/usr/share/locale/en@hebrew'
+07:54:33,050 INF program: removed directory '/mnt/sysimage/usr/share/locale/en@quot/LC_MESSAGES'
+07:54:33,050 INF program: removed directory '/mnt/sysimage/usr/share/locale/en@quot'
+07:54:33,050 INF program: removed '/mnt/sysimage/usr/share/locale/en_CA/LC_MESSAGES/glib20.mo'
+07:54:33,050 INF program: removed directory '/mnt/sysimage/usr/share/locale/en_CA/LC_MESSAGES'
+07:54:33,050 INF program: removed directory '/mnt/sysimage/usr/share/locale/en_CA'
+07:54:33,050 INF program: removed directory '/mnt/sysimage/usr/share/locale/en@cyrillic/LC_MESSAGES'
+07:54:33,050 INF program: removed directory '/mnt/sysimage/usr/share/locale/en@cyrillic'
+07:54:33,050 INF program: removed directory '/mnt/sysimage/usr/share/locale/en@shaw/LC_MESSAGES'
+07:54:33,050 INF program: removed directory '/mnt/sysimage/usr/share/locale/en@shaw'
+07:54:33,051 INF program: removed directory '/mnt/sysimage/usr/share/locale/en@arabic/LC_MESSAGES'
+07:54:33,051 INF program: removed directory '/mnt/sysimage/usr/share/locale/en@arabic'
+07:54:33,051 INF program: removed directory '/mnt/sysimage/usr/share/locale/en@greek/LC_MESSAGES'
+07:54:33,051 INF program: removed directory '/mnt/sysimage/usr/share/locale/en@greek'
+07:54:33,051 INF program: removed '/mnt/sysimage/usr/share/locale/en_GB/LC_MESSAGES/glib20.mo'
+07:54:33,051 INF program: removed '/mnt/sysimage/usr/share/locale/en_GB/LC_MESSAGES/p11-kit.mo'
+07:54:33,051 INF program: removed '/mnt/sysimage/usr/share/locale/en_GB/LC_MESSAGES/dnf.mo'
+07:54:33,051 INF program: removed directory '/mnt/sysimage/usr/share/locale/en_GB/LC_MESSAGES'
+07:54:33,052 INF program: removed directory '/mnt/sysimage/usr/share/locale/en_GB'
+07:54:33,052 INF program: removed directory '/mnt/sysimage/usr/share/locale/en@boldquot/LC_MESSAGES'
+07:54:33,052 INF program: removed directory '/mnt/sysimage/usr/share/locale/en@boldquot'
+07:54:33,052 INF program: removed directory '/mnt/sysimage/usr/share/locale/en@piglatin/LC_MESSAGES'
+07:54:33,052 INF program: removed directory '/mnt/sysimage/usr/share/locale/en@piglatin'
+07:54:33,052 INF program: + for dir in locale i18n
+07:54:33,052 INF program: + find /mnt/sysimage/usr/share/i18n -mindepth 1 -maxdepth 1 -type d -not '(' -name en_US -o -name POSIX ')' -exec rm -rfv '{}' +
+07:54:33,052 INF program: removed directory '/mnt/sysimage/usr/share/i18n/charmaps'
+07:54:33,052 INF program: removed directory '/mnt/sysimage/usr/share/i18n/locales'
+07:54:33,053 DBG program: Return code: 0

@@ -1,0 +1,873 @@
+07:52:25,368 DBG core.util: VARIANT_ID not found in os-release files
+07:52:25,369 INF core.configuration.profile: Loading information about profiles from /etc/anaconda/profile.d.
+07:52:25,374 INF core.configuration.profile: Found the 'almalinux' profile at /etc/anaconda/profile.d/almalinux.conf.
+07:52:25,375 INF core.configuration.profile: Found the 'centos' profile at /etc/anaconda/profile.d/centos.conf.
+07:52:25,375 INF core.configuration.profile: Found the 'circle' profile at /etc/anaconda/profile.d/circle.conf.
+07:52:25,376 INF core.configuration.profile: Found the 'fedora-designsuite' profile at /etc/anaconda/profile.d/fedora-designsuite.conf.
+07:52:25,377 INF core.configuration.profile: Found the 'fedora-eln' profile at /etc/anaconda/profile.d/fedora-eln.conf.
+07:52:25,377 INF core.configuration.profile: Found the 'fedora-iot' profile at /etc/anaconda/profile.d/fedora-iot.conf.
+07:52:25,378 INF core.configuration.profile: Found the 'fedora-kde' profile at /etc/anaconda/profile.d/fedora-kde.conf.
+07:52:25,378 INF core.configuration.profile: Found the 'fedora-kinoite' profile at /etc/anaconda/profile.d/fedora-kinoite.conf.
+07:52:25,379 INF core.configuration.profile: Found the 'fedora-sericea' profile at /etc/anaconda/profile.d/fedora-sericea.conf.
+07:52:25,380 INF core.configuration.profile: Found the 'fedora-server' profile at /etc/anaconda/profile.d/fedora-server.conf.
+07:52:25,380 INF core.configuration.profile: Found the 'fedora-silverblue' profile at /etc/anaconda/profile.d/fedora-silverblue.conf.
+07:52:25,381 INF core.configuration.profile: Found the 'fedora-workstation' profile at /etc/anaconda/profile.d/fedora-workstation.conf.
+07:52:25,381 INF core.configuration.profile: Found the 'fedora' profile at /etc/anaconda/profile.d/fedora.conf.
+07:52:25,382 INF core.configuration.profile: Found the 'ovirt' profile at /etc/anaconda/profile.d/ovirt.conf.
+07:52:25,385 INF core.configuration.profile: Found the 'rhel' profile at /etc/anaconda/profile.d/rhel.conf.
+07:52:25,386 INF core.configuration.profile: Found the 'rhvh' profile at /etc/anaconda/profile.d/rhvh.conf.
+07:52:25,386 INF core.configuration.profile: Found the 'rocky' profile at /etc/anaconda/profile.d/rocky.conf.
+07:52:25,387 INF core.configuration.profile: Found the 'scientific-linux' profile at /etc/anaconda/profile.d/scientific-linux.conf.
+07:52:25,388 INF core.configuration.profile: Found the 'virtuozzo-linux' profile at /etc/anaconda/profile.d/virtuozzo-linux.conf.
+07:52:25,388 DBG core.configuration.profile: Detecting a profile for ID=fedora, VARIANT_ID=None.
+07:52:25,388 INF core.configuration.profile: The 'fedora' profile is detected.
+07:52:25,388 INF core.configuration.anaconda: Load the 'fedora' profile configuration.
+07:52:25,392 INF main: /sbin/anaconda 39.4-1.fc39
+07:52:25,393 INF core.util: Reporting the IPMI event: 7
+07:52:25,468 WRN misc: /usr/lib64/python3.11/site-packages/pyanaconda/core/users.py:32: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  import crypt  # pylint: disable=deprecated-module
+
+07:52:25,651 INF startup_utils: check_memory(): total:4029, needed:320
+07:52:25,652 DBG startup_utils: Don't set up proxy variables.
+07:52:25,668 INF main: anaconda called with cmdline = ['/sbin/anaconda']
+07:52:25,669 INF main: Default encoding = utf-8 
+07:52:25,669 INF misc: Configuration loaded from: ['/etc/anaconda/anaconda.conf', '/etc/anaconda/profile.d/fedora.conf', '/etc/anaconda/conf.d/00-do-nothing.conf', '/etc/anaconda/conf.d/01-still-do-nothing.conf']
+07:52:25,669 INF misc: Writing the runtime configuration to: /run/anaconda/anaconda.conf
+07:52:25,699 INF core.dbus: Connecting to the Anaconda bus at unix:path=/tmp/dbus-0H90G9Mk5z,guid=478bfeb7bddc3a9838f76947640d84b9.
+07:52:34,104 INF main: Found a kickstart file: /run/install/ks.cfg
+07:52:34,183 INF startup_utils: Parsing kickstart: /run/install/ks.cfg
+07:52:35,360 WRN kickstart: Command keyboard will be parsed in DBus module.
+07:52:35,360 WRN kickstart: Command network will be parsed in DBus module.
+07:52:35,360 WRN kickstart: Command repo will be parsed in DBus module.
+07:52:35,360 WRN kickstart: Command rootpw will be parsed in DBus module.
+07:52:35,361 WRN kickstart: Command timesource will be parsed in DBus module.
+07:52:35,361 WRN kickstart: Command timezone will be parsed in DBus module.
+07:52:35,361 WRN kickstart: Command url will be parsed in DBus module.
+07:52:35,361 WRN kickstart: Command bootloader will be parsed in DBus module.
+07:52:35,361 WRN kickstart: Command autopart will be parsed in DBus module.
+07:52:35,361 WRN kickstart: Command zerombr will be parsed in DBus module.
+07:52:35,361 WRN kickstart: Command clearpart will be parsed in DBus module.
+07:52:35,880 DBG localization: setting locale to: en_US.UTF-8
+07:52:35,899 DBG network: Initialization started.
+07:52:35,913 DBG network: Devices found: ['ens3']
+07:52:35,920 DBG network: Running task Apply kickstart
+07:52:36,031 DBG network: Apply kickstart result: ['ens3']
+07:52:36,040 DBG network: Running task Dump missing config files
+07:52:36,148 DBG network: Dump missing config files result: []
+07:52:36,154 DBG network: Creating network configurations.
+07:52:36,159 DBG network: Initialization finished.
+07:52:36,160 INF threading: Running Thread: AnaWaitForConnectingNMThread (140037914773184)
+07:52:36,160 DBG anaconda: setting display mode to TUI
+07:52:36,174 WRN stdout: Not asking for VNC because of an automated install
+07:52:36,176 WRN stdout: Not asking for VNC because text mode was explicitly asked for in kickstart
+07:52:36,176 INF anaconda: Display mode is set to 'interactive text mode'.
+07:52:36,193 INF network: got 0 NTP servers from DHCP
+07:52:36,194 INF startup_utils: check_memory(): total:4029, needed:320
+07:52:36,197 DBG ui.lib.addons: Loading spokes into module path for addon com_redhat_kdump
+07:52:36,199 INF threading: Thread Done: AnaWaitForConnectingNMThread (140037914773184)
+07:52:36,202 DBG startup_utils: no default systemd target set & in text/vnc mode - setting multi-user.target.
+07:52:36,384 DBG core.storage: LABEL=OEMDRV matches [] for devicetree=None and disks_only=True
+07:52:36,409 INF threading: Running Thread: AnaStorageThread (140037914773184)
+07:52:36,419 INF threading: Running Thread: AnaTimeInitThread (140037811336896)
+07:52:36,496 DBG payload.manager: Restarting payload thread
+07:52:36,497 INF threading: Running Thread: AnaPayloadRestartThread (140037802944192)
+07:52:36,497 INF startup_utils: Geolocation is disabled due to automated kickstart based installation.
+07:52:36,498 INF threading: Running Thread: AnaPayloadThread (140037794551488)
+07:52:36,498 INF threading: Thread Done: AnaPayloadRestartThread (140037802944192)
+07:52:36,515 DBG simpleline: GLib event loop is used!
+07:52:36,623 INF core.hw: Skipping detection of SMT.
+07:52:36,632 INF lifecycle: Adding controller: SummaryHub
+07:52:37,001 INF threading: Thread Done: AnaTimeInitThread (140037811336896)
+07:52:37,131 INF threading: Thread Done: AnaStorageThread (140037914773184)
+07:52:37,216 DBG modules.payloads.payload.dnf.utils: Release version of Fedora is rawhide.
+07:52:37,217 DBG modules.payloads.payload.dnf.dnf_manager: The DNF base has been created.
+07:52:37,256 DBG modules.payloads.payload.dnf.dnf_manager: The DNF cache has been cleared.
+07:52:37,256 DBG modules.payloads.payload.dnf.utils: Release version of Fedora is rawhide.
+07:52:37,256 DBG modules.payloads.payload.dnf.dnf_manager: The substitution variables have been reset.
+07:52:37,266 DBG modules.payloads.payload.dnf.dnf_manager: DNF configuration:
+[main]
+allow_vendor_change = 1
+assumeno = 0
+assumeyes = 0
+autocheck_running_kernel = 1
+bandwidth = 0
+best = 0
+bugtracker_url = https://bugzilla.redhat.com/enter_bug.cgi?product=Fedora&component=dnf
+cachedir = /tmp/dnf.cache
+cacheonly = 0
+check_config_file_age = 1
+clean_requirements_on_remove = 1
+color = auto
+color_list_available_downgrade = magenta
+color_list_available_install = bold,cyan
+color_list_available_reinstall = bold,underline,green
+color_list_available_upgrade = bold,blue
+color_list_installed_extra = bold,red
+color_list_installed_newer = bold,yellow
+color_list_installed_older = yellow
+color_list_installed_reinstall = cyan
+color_search_match = bold,magenta
+color_update_installed = red
+color_update_local = green
+color_update_remote = bold,green
+config_file_path = /etc/dnf/dnf.conf
+countme = 0
+debug_solver = 0
+debuglevel = 2
+defaultyes = 0
+deltarpm = 1
+deltarpm_percentage = 75
+disable_excludes = 
+diskspacecheck = 1
+enabled = 1
+enablegroups = 1
+errorlevel = 3
+exclude = 
+exclude_from_weak = 
+exclude_from_weak_autodetect = 1
+excludepkgs = 
+exit_on_lock = 0
+fastestmirror = 0
+gpgcheck = 0
+gpgkey_dns_verification = 0
+group_package_types = mandatory, default, conditional
+history_list_view = commands
+history_record = 1
+history_record_packages = dnf, rpm
+ignorearch = 0
+includepkgs = 
+install_weak_deps = 0
+installonly_limit = 3
+installonlypkgs = kernel, kernel-PAE, installonlypkg(kernel), installonlypkg(kernel-module), installonlypkg(vm), multiversion(kernel)
+installroot = /mnt/sysroot
+ip_resolve = whatever
+keepcache = 0
+localpkg_gpgcheck = 0
+log_compress = 0
+log_rotate = 4
+log_size = 1048576
+logdir = /tmp/
+logfilelevel = 9
+max_parallel_downloads = 3
+metadata_expire = 172800
+metadata_timer_sync = 10800
+minrate = 1000
+module_obsoletes = 0
+module_platform_id = platform:f39
+module_stream_switch = 0
+multilib_policy = best
+obsoletes = 1
+password = 
+persistdir = /mnt/sysroot/var/lib/dnf
+pluginconfpath = /tmp/dnf.pluginconf
+pluginpath = /usr/lib/python3.11/site-packages/dnf-plugins
+plugins = 1
+protect_running_kernel = 1
+protected_packages = dnf, dnf, grub2-efi-ia32, grub2-efi-x64, grub2-tools-minimal, shim-aa64, shim-arm, shim-ia32, shim-x64, systemd, systemd-udev
+proxy = 
+proxy_auth_method = any
+proxy_password = 
+proxy_sslcacert = 
+proxy_sslclientcert = 
+proxy_sslclientkey = 
+proxy_sslverify = 1
+proxy_username = 
+recent = 7
+repo_gpgcheck = 0
+reposdir = /etc/yum.repos.d, /etc/anaconda.repos.d
+reset_nice = 1
+retries = 10
+rpmverbosity = info
+showdupesfromrepos = 0
+skip_broken = 0
+skip_if_unavailable = 0
+sslcacert = 
+sslclientcert = 
+sslclientkey = 
+sslverify = 1
+sslverifystatus = 0
+strict = 1
+system_cachedir = /var/cache/dnf
+throttle = 0
+timeout = 30
+transformdb = 1
+tsflags = 
+upgrade_group_objects_upgrade = 1
+user_agent = libdnf (Fedora Linux 39; generic; Linux.x86_64)
+username = 
+varsdir = /etc/yum/vars, /etc/dnf/vars
+zchunk = 1
+substitutions = {'arch': 'x86_64', 'basearch': 'x86_64', 'releasever': 'rawhide'}
+07:52:37,266 DBG modules.payloads.payload.dnf.dnf_manager: Read system repositories.
+07:52:37,282 DBG modules.payloads.payload.dnf.dnf_manager: Disable system repositories.
+07:52:37,303 INF lifecycle: Module initialized: LangSpoke
+07:52:37,305 DBG modules.payloads.payload.dnf.tree_info: Reload treeinfo metadata.
+07:52:37,305 DBG modules.payloads.payload.dnf.tree_info: Load treeinfo metadata for 'https://kojipkgs.fedoraproject.org/compose/rawhide/Fedora-Rawhide-20230312.n.0/compose/Everything/x86_64/os'.
+07:52:37,311 INF lifecycle: Module initialized: TimeSpoke
+07:52:37,311 INF threading: Running Thread: AnaSourceWatcher (140037914773184)
+07:52:37,317 INF threading: Running Thread: AnaSoftwareWatcher (140037811336896)
+07:52:37,322 INF lifecycle: Module initialized: NetworkSpoke
+07:52:37,333 INF threading: Running Thread: AnaStorageWatcher (140037802944192)
+07:52:37,339 INF lifecycle: Module initialized: PasswordSpoke
+07:52:37,344 WRN ui.tui.hubs: Spoke PasswordSpoke initialization failure!
+07:52:37,348 DBG ui.lib.storage: Selecting all disks by default: vda
+07:52:37,348 DBG ui.lib.storage: Applying partitioning
+07:52:37,349 DBG ui.tui.spokes.storage: Saving storage configuration...
+07:52:37,349 INF lifecycle: Module initialized: UserSpoke
+07:52:37,352 INF lifecycle: Initialization of all modules (8) has been started.
+07:52:37,440 DBG modules.payloads.payload.dnf.tree_info: Loaded treeinfo metadata:
+[checksums]
+images/boot.iso = sha256:1a770efa897c83c1ff186767a7b66e78f99ed099370a53fcbdc7b89483f28619
+images/eltorito.img = sha256:8d3774a9fc13a0704757497c6e89ae4b5646ef49514070f9246f075079519cfb
+images/install.img = sha256:5b21bb2ef228074cef748b5167c749fcf72694dedb47df30061922adfe52328d
+images/pxeboot/initrd.img = sha256:f0d07e2ac8012ac3523cb5872287b68ef01332b7e5278c67e8b6fa27a5d3b5d9
+images/pxeboot/vmlinuz = sha256:777d9d1ca1b4e13e36f0755bece61da5ca4a383702ccea232aba15c4dc830a22
+
+[general]
+; WARNING.0 = This section provides compatibility with pre-productmd treeinfos.
+; WARNING.1 = Read productmd documentation for details about new format.
+arch = x86_64
+family = Fedora
+name = Fedora Rawhide
+packagedir = Packages
+platforms = x86_64,xen
+repository = .
+timestamp = 1678607353
+variant = Everything
+variants = Everything
+version = Rawhide
+
+[header]
+type = productmd.treeinfo
+version = 1.2
+
+[images-x86_64]
+boot.iso = images/boot.iso
+eltorito.img = images/eltorito.img
+initrd = images/pxeboot/initrd.img
+kernel = images/pxeboot/vmlinuz
+
+[images-xen]
+initrd = images/pxeboot/initrd.img
+kernel = images/pxeboot/vmlinuz
+
+[release]
+name = Fedora
+short = Fedora
+version = Rawhide
+
+[stage2]
+mainimage = images/install.img
+
+[tree]
+arch = x86_64
+build_timestamp = 1678607353
+platforms = x86_64,xen
+variants = Everything
+
+[variant-Everything]
+id = Everything
+name = Everything
+packages = Packages
+repository = .
+type = variant
+uid = Everything
+
+
+07:52:37,440 DBG modules.payloads.payload.dnf.tree_info: Processing the 'Everything' variant.
+07:52:37,440 DBG modules.payloads.payload.dnf.tree_info: The treeinfo metadata is loaded.
+07:52:37,440 DBG modules.payloads.payload.dnf.dnf_manager: The $releasever variable is set to 'rawhide'.
+07:52:37,443 DBG modules.payloads.payload.dnf.repositories: Update treeinfo repositories...
+07:52:37,444 DBG modules.payloads.payload.dnf.repositories: Remove all treeinfo repositories.
+07:52:37,448 INF modules.payloads.payload.dnf.dnf_manager: Added the 'anaconda' repository: [anaconda]
+bandwidth: 0
+baseurl: https://kojipkgs.fedoraproject.org/compose/rawhide/Fedora-Rawhide-20230312.n.0/compose/Everything/x86_64/os
+cachedir: /tmp/dnf.cache
+cost: 1000
+countme: 0
+deltarpm: 1
+deltarpm_percentage: 75
+enabled: 1
+enabled_metadata: 
+enablegroups: 1
+exclude: 
+excludepkgs: 
+fastestmirror: 0
+gpgcheck: 0
+gpgkey: 
+includepkgs: 
+ip_resolve: whatever
+max_parallel_downloads: 3
+mediaid: 
+metadata_expire: 172800
+metalink: 
+minrate: 1000
+mirrorlist: 
+module_hotfixes: 0
+name: anaconda
+password: 
+priority: 99
+protected_packages: dnf, dnf, grub2-efi-ia32, grub2-efi-x64, grub2-tools-minimal, shim-aa64, shim-arm, shim-ia32, shim-x64, systemd, systemd-udev
+proxy: 
+proxy_auth_method: any
+proxy_password: 
+proxy_sslcacert: 
+proxy_sslclientcert: 
+proxy_sslclientkey: 
+proxy_sslverify: 1
+proxy_username: 
+repo_gpgcheck: 0
+retries: 10
+skip_if_unavailable: 0
+sslcacert: 
+sslclientcert: 
+sslclientkey: 
+sslverify: 1
+sslverifystatus: 0
+throttle: 0
+timeout: 30
+type: 
+user_agent: libdnf (Fedora Linux 39; generic; Linux.x86_64)
+username: 
+07:52:37,449 DBG modules.payloads.payload.dnf.dnf_manager: Load metadata for the 'anaconda' repository.
+07:52:37,619 DBG ui.tui.spokes.storage: Checking storage configuration...
+07:52:39,715 DBG ui.lib.storage: Validation has been completed: ValidationReport(error_messages=[], warning_messages=[])
+07:52:39,828 DBG ui.lib.storage: Partitioning has been applied.
+07:52:39,834 INF lifecycle: Module initialized: StorageSpoke
+07:52:39,834 INF threading: Thread Done: AnaStorageWatcher (140037802944192)
+07:52:42,931 INF modules.payloads.payload.dnf.dnf_manager: Loaded metadata from '['https://kojipkgs.fedoraproject.org/compose/rawhide/Fedora-Rawhide-20230312.n.0/compose/Everything/x86_64/os']'.
+07:52:42,937 INF modules.payloads.payload.dnf.dnf_manager: Added the 'koji-override-0' repository: [koji-override-0]
+bandwidth: 0
+baseurl: https://kojipkgs.fedoraproject.org/compose/rawhide/Fedora-Rawhide-20230312.n.0/compose/Everything/x86_64/os
+cachedir: /tmp/dnf.cache
+cost: 1000
+countme: 0
+deltarpm: 1
+deltarpm_percentage: 75
+enabled: 1
+enabled_metadata: 
+enablegroups: 1
+exclude: 
+excludepkgs: 
+fastestmirror: 0
+gpgcheck: 0
+gpgkey: 
+includepkgs: 
+ip_resolve: whatever
+max_parallel_downloads: 3
+mediaid: 
+metadata_expire: 172800
+metalink: 
+minrate: 1000
+mirrorlist: 
+module_hotfixes: 0
+name: koji-override-0
+password: 
+priority: 99
+protected_packages: dnf, dnf, grub2-efi-ia32, grub2-efi-x64, grub2-tools-minimal, shim-aa64, shim-arm, shim-ia32, shim-x64, systemd, systemd-udev
+proxy: 
+proxy_auth_method: any
+proxy_password: 
+proxy_sslcacert: 
+proxy_sslclientcert: 
+proxy_sslclientkey: 
+proxy_sslverify: 1
+proxy_username: 
+repo_gpgcheck: 0
+retries: 10
+skip_if_unavailable: 0
+sslcacert: 
+sslclientcert: 
+sslclientkey: 
+sslverify: 1
+sslverifystatus: 0
+throttle: 0
+timeout: 30
+type: 
+user_agent: libdnf (Fedora Linux 39; generic; Linux.x86_64)
+username: 
+07:52:42,938 DBG modules.payloads.payload.dnf.dnf_manager: Load metadata for the 'koji-override-0' repository.
+07:52:45,069 INF modules.payloads.payload.dnf.dnf_manager: Loaded metadata from '['https://kojipkgs.fedoraproject.org/compose/rawhide/Fedora-Rawhide-20230312.n.0/compose/Everything/x86_64/os']'.
+07:52:45,070 DBG modules.payloads.payload.dnf.dnf_manager: Load metadata for the 'anaconda' repository.
+07:52:45,070 INF modules.payloads.payload.dnf.dnf_manager: Loaded metadata from '['https://kojipkgs.fedoraproject.org/compose/rawhide/Fedora-Rawhide-20230312.n.0/compose/Everything/x86_64/os']'.
+07:52:45,070 DBG modules.payloads.payload.dnf.dnf_manager: Load metadata for the 'koji-override-0' repository.
+07:52:45,071 INF modules.payloads.payload.dnf.dnf_manager: Loaded metadata from '['https://kojipkgs.fedoraproject.org/compose/rawhide/Fedora-Rawhide-20230312.n.0/compose/Everything/x86_64/os']'.
+07:53:49,822 INF modules.payloads.payload.dnf.dnf_manager: Loaded packages and group metadata.
+07:53:49,948 DBG modules.payloads.payload.dnf.dnf_manager: Loaded repomd.xml hashes: {'anaconda': b'\xea=\x93\x00\xb3\xdfg\xa3?Q\xa0\xd9\xe1\xdeu\x10\xbd\xed\x8e\xe9\xc1\xfb\x8a\x08\xca\xd6(\xae (\xeaj', 'koji-override-0': b'\xea=\x93\x00\xb3\xdfg\xa3?Q\xa0\xd9\xe1\xdeu\x10\xbd\xed\x8e\xe9\xc1\xfb\x8a\x08\xca\xd6(\xae (\xeaj'}
+07:53:49,949 INF threading: Thread Done: AnaPayloadThread (140037794551488)
+07:53:49,956 INF threading: Running Thread: AnaCheckSoftwareThread (140037794551488)
+07:53:49,957 INF lifecycle: Module initialized: SourceSpoke
+07:53:49,958 INF threading: Thread Done: AnaSourceWatcher (140037914773184)
+07:53:49,967 DBG modules.payloads.payload.dnf.dnf_manager: The software selection has been cleared.
+07:53:49,967 DBG modules.payloads.payload.dnf.validation: Collecting selected specs.
+07:53:49,967 INF modules.payloads.payload.dnf.utils: Skipping @core group; system may not be complete.
+07:53:49,968 DBG modules.payloads.payload.dnf.validation: Collecting required specs.
+07:53:49,968 DBG modules.payloads.payload.dnf.validation: Resolving the software selection.
+07:53:49,968 DBG modules.payloads.payload.dnf.dnf_manager: Disabling modules: []
+07:53:49,977 DBG modules.payloads.payload.dnf.dnf_manager: Enabling modules: []
+07:53:49,984 INF modules.payloads.payload.dnf.dnf_manager: Including specs: ['bash', 'coreutils', 'dnf', 'dnf-yum', 'fedora-release-container', 'fedora-repos-modular', 'glibc-minimal-langpack', 'rootfiles', 'rpm', 'sudo', 'tar', 'util-linux-core', 'vim-minimal']
+07:53:49,984 INF modules.payloads.payload.dnf.dnf_manager: Excluding specs: ['@core', 'dosfstools', 'e2fsprogs', 'fuse-libs', 'glibc-langpack-en', 'gnupg2-smime', 'grubby', 'kernel', 'langpacks-en', 'langpacks-en_GB', 'libss', 'pinentry', 'shared-mime-info', 'sssd-client', 'trousers', 'util-linux', 'xkeyboard-config']
+07:53:54,174 DBG modules.payloads.payload.dnf.dnf_manager: Resolving the software selection.
+07:53:54,211 INF modules.payloads.payload.dnf.dnf_manager: The software selection has been resolved (149 packages selected).
+07:53:54,211 DBG modules.payloads.payload.dnf.validation: Resolving has been completed: ValidationReport(error_messages=[], warning_messages=[])
+07:53:54,212 INF threading: Thread Done: AnaCheckSoftwareThread (140037794551488)
+07:53:54,213 INF lifecycle: Module initialized: SoftwareSpoke
+07:53:54,213 INF lifecycle: All modules have been initialized.
+07:53:54,214 INF threading: Thread Done: AnaSoftwareWatcher (140037811336896)
+07:53:55,119 DBG simpleline: Scheduling screen SummaryHub
+07:53:55,119 DBG simpleline: New signal RenderScreenSignal enqueued with source ScreenScheduler
+07:53:55,120 DBG simpleline: Scheduling screen ProgressSpoke
+07:53:55,120 DBG simpleline: Starting main loop
+07:53:55,122 DBG simpleline: Processing screen ScreenData(SummaryHub,None,False)
+07:53:55,231 DBG simpleline: Input is required by ScreenData(SummaryHub,None,False) screen
+07:53:55,376 INF modules.payloads.payload.dnf.dnf_manager: Total install size: 417.32 MiB
+07:53:55,379 INF modules.payloads.payload.dnf.dnf_manager: Total download size: 212.05 MiB
+07:53:55,426 DBG modules.payloads.payload.dnf.utils: Considering /mnt/sysroot (4.25 GiB) for download and install.
+07:53:55,426 DBG modules.payloads.payload.dnf.utils: The install and download space is required.
+07:53:55,426 DBG modules.payloads.payload.dnf.utils: The package installation requires 629.37 MiB.
+07:53:55,427 INF ui.lib.space: fs space: 4.25 GiB  needed: 629.37 MiB
+07:53:55,427 DBG simpleline: New signal CloseScreenSignal enqueued with source SummaryHub
+07:53:55,428 DBG simpleline: Closing screen ScreenData(SummaryHub,None,False) from SummaryHub
+07:53:55,428 DBG simpleline: New signal RenderScreenSignal enqueued with source ScreenScheduler
+07:53:55,428 DBG simpleline: Processing screen ScreenData(ProgressSpoke,None,False)
+07:53:55,448 INF threading: Running Thread: AnaTaskThread-RunInstallationTask-1 (140037811336896)
+07:53:55,449 DBG ui.tui.spokes.installation_progress: The installation has started.
+07:53:55,449 INF modules.common.task.task: Run the installation queue.
+07:53:55,814 INF installation: Top-level task queue: Complete installation queue
+Number of task queues: 16
+Number of tasks: 40
+Task & task group listing:
+ Task queue: Installation queue
+  Task queue: Installation environment setup
+   Task: Get missing keyboard settings.
+  Task queue: Early storage configuration
+   Task: Create storage layout
+   Task: Mount filesystems
+   Task: Write the storage configuration
+  Task queue: Pre-install scripts
+   Task: Run %pre-install scripts
+  Task queue: Pre install tasks
+   Task: Discover information about a realm
+   Task: Set up FIPS for the payload installation
+   Task: Find additional packages & run pre_install()
+  Task queue: Payload installation
+   Task: Install the payload
+  Task queue: Bootloader installation
+   Task: Configure bootloader
+   Task: Install bootloader
+  Task queue: Post-installation setup tasks
+   Task: Run post-installation setup tasks
+ Task queue: Configuration queue
+  Task queue: Installed system configuration
+   Task: Configure SELinux
+   Task: Configure fingerprint authentication
+   Task: Authselect configuration
+   Task: Set the Hardware Clock from the System Clock
+   Task: Configure time zone
+   Task: Configure NTP
+   Task: Configure Initial Setup
+   Task: Configure post-installation tools
+   Task: Configure services
+   Task: Configure systemd default target
+   Task: Configure default desktop
+   Task: Configure language
+   Task: Configure keyboard
+   Task: Configure firewall
+  Task queue: Network configuration
+   Task: Network configuration
+  Task queue: User creation
+   Task: Create groups
+   Task: Create users
+   Task: Configure root password
+   Task: Set SSH keys
+   Task: Configure optional root password SSH login
+  Task queue: Anaconda addon configuration
+  Task queue: Initramfs generation
+   Task: Generate initramfs
+  Task: Configure FIPS
+  Task: Join a realm
+  Task: Rerun zipl
+  Task queue: Write configs and kickstarts
+   Task: Store kickstarts
+  Task queue: Post installation scripts
+   Task: Run post installation scripts
+  Task: Set file contexts
+  Task: Copy installation logs
+07:53:55,815 INF installation: Task started: Installation queue (1/40)
+07:53:55,815 INF installation: Queue started: Installation queue (1/16)
+07:53:55,815 INF installation: Queue started: Installation environment setup (2/16)
+07:53:55,823 INF installation: Queue started: Early storage configuration (3/16)
+07:53:57,972 INF installation: Queue started: Pre-install scripts (4/16)
+07:53:57,973 INF installation: Queue started: Pre install tasks (5/16)
+07:53:57,983 INF installation: Queue started: Payload installation (6/16)
+07:53:57,989 DBG modules.payloads.payload.dnf.installation: Set '__dbi_htconfig' to 'hash nofsync %{__dbi_other} %{__dbi_perms}'.
+07:53:57,991 DBG modules.payloads.payload.dnf.installation: Set '_excludedocs' to '1'.
+07:53:57,991 DBG modules.payloads.payload.dnf.installation: Set '_install_langs' to 'en'.
+07:53:57,991 DBG modules.payloads.payload.dnf.installation: Set '__file_context_path' to '/etc/selinux/targeted/contexts/files/file_contexts'.
+07:53:57,999 DBG modules.payloads.payload.dnf.dnf_manager: The software selection has been cleared.
+07:53:58,005 DBG modules.payloads.payload.dnf.validation: Collecting selected specs.
+07:53:58,005 INF modules.payloads.payload.dnf.utils: Skipping @core group; system may not be complete.
+07:53:58,005 DBG modules.payloads.payload.dnf.validation: Collecting required specs.
+07:53:58,071 WRN modules.payloads.payload.dnf.requirements: Selected locale 'en_US.UTF-8' does not match any available langpacks.
+07:53:58,093 WRN modules.payloads.payload.dnf.requirements: Platform group platform-kvm not available.
+07:53:58,094 DBG modules.payloads.payload.dnf.requirements: Applying requirements: [Requirement(name='e2fsprogs', reason='Required to manage storage devices.', type='package')]
+07:53:58,094 DBG modules.payloads.payload.dnf.requirements: Requirement 'e2fsprogs' is ignored because it's excluded.
+07:53:58,094 DBG modules.payloads.payload.dnf.validation: Resolving the software selection.
+07:53:58,094 DBG modules.payloads.payload.dnf.dnf_manager: Disabling modules: []
+07:53:58,102 DBG modules.payloads.payload.dnf.dnf_manager: Enabling modules: []
+07:53:58,108 INF modules.payloads.payload.dnf.dnf_manager: Including specs: ['bash', 'coreutils', 'dnf', 'dnf-yum', 'fedora-release-container', 'fedora-repos-modular', 'glibc-minimal-langpack', 'rootfiles', 'rpm', 'sudo', 'tar', 'util-linux-core', 'vim-minimal']
+07:53:58,109 INF modules.payloads.payload.dnf.dnf_manager: Excluding specs: ['@core', 'dosfstools', 'e2fsprogs', 'fuse-libs', 'glibc-langpack-en', 'gnupg2-smime', 'grubby', 'kernel', 'langpacks-en', 'langpacks-en_GB', 'libss', 'pinentry', 'shared-mime-info', 'sssd-client', 'trousers', 'util-linux', 'xkeyboard-config']
+07:53:58,160 DBG modules.payloads.payload.dnf.dnf_manager: Resolving the software selection.
+07:53:58,216 INF modules.payloads.payload.dnf.dnf_manager: The software selection has been resolved (149 packages selected).
+07:53:58,216 DBG modules.payloads.payload.dnf.validation: Resolving has been completed: ValidationReport(error_messages=[], warning_messages=[])
+07:53:58,223 INF modules.payloads.payload.dnf.dnf_manager: Total download size: 212.05 MiB
+07:53:58,364 INF modules.payloads.payload.dnf.dnf_manager: Total install size: 417.32 MiB
+07:53:58,384 DBG modules.payloads.payload.dnf.utils: Considering /mnt/sysroot (4.57 GiB) for download and install.
+07:53:58,384 DBG modules.payloads.payload.dnf.utils: Considering /mnt/sysroot/tmp (1.9 GiB) for download and install.
+07:53:58,385 INF modules.payloads.payload.dnf.utils: Mount point /mnt/sysroot/tmp picked as download location
+07:53:58,387 INF modules.payloads.payload.dnf.dnf_manager: Downloading packages to /mnt/sysroot/tmp/dnf.package.cache.
+07:54:00,094 DBG modules.payloads.payload.dnf.dnf_manager: Starting the transaction process...
+07:54:00,105 DBG modules.payloads.payload.dnf.dnf_manager: Running the transaction...
+07:54:03,876 INF modules.payloads.payload.dnf.transaction_progress: Configuring (running scriptlet for): filesystem-3.18-4.fc39.x86_64 1677000960 38e188b7682c3df92bcebd568812b4f0de6f35d785a7d3e568acc3e6e14c28c7
+07:54:04,308 INF modules.payloads.payload.dnf.transaction_progress: Installed: libgcc-13.0.1-0.6.fc39.x86_64 1677956859 fe2f422d5c7b9940e4b6f5ba8df16a7f1a566469af6190b2e61b81e743bb570b
+07:54:04,384 INF modules.payloads.payload.dnf.transaction_progress: Configuring (running scriptlet for): libgcc-13.0.1-0.6.fc39.x86_64 1677956859 fe2f422d5c7b9940e4b6f5ba8df16a7f1a566469af6190b2e61b81e743bb570b
+07:54:04,386 INF modules.payloads.payload.dnf.transaction_progress: Installed: crypto-policies-20230301-1.gita12f7b2.fc39.noarch 1678127486 67b6c981dbc626378729138b7eec77198053d6c4c354a5c638901afa30c5a847
+07:54:04,505 INF modules.payloads.payload.dnf.transaction_progress: Configuring (running scriptlet for): crypto-policies-20230301-1.gita12f7b2.fc39.noarch 1678127486 67b6c981dbc626378729138b7eec77198053d6c4c354a5c638901afa30c5a847
+07:54:04,514 INF modules.payloads.payload.dnf.transaction_progress: Installed: tzdata-2022g-2.fc38.noarch 1674279710 e9f81f7b77e1011de9e9cf4c68a149aa70f4f33e2bfa394213396115eaf9a2d0
+07:54:06,290 INF modules.payloads.payload.dnf.transaction_progress: Installed: fedora-release-identity-container-39-0.5.noarch 1678139717 617dafc89d2336389625a380219ddf3dba3e8f0192af9fe96f62a7047cc175f5
+07:54:06,316 INF modules.payloads.payload.dnf.transaction_progress: Installed: vim-data-2:9.0.1367-1.fc39.noarch 1677740541 0ff9600456ccd8cd3aca0a2ea14ff736dad3d3fecf84d20ebb87d84dad120196
+07:54:06,334 INF modules.payloads.payload.dnf.transaction_progress: Installed: python-setuptools-wheel-65.5.1-2.fc38.noarch 1674569230 54aa1a0699326aae0137529166df648a393331e99280ca10f77f6fc904caf9e4
+07:54:06,357 INF modules.payloads.payload.dnf.transaction_progress: Installed: publicsuffix-list-dafsa-20221208-2.fc38.noarch 1674211058 3cf03283e8e07e37763931446a599809c069fe25c20a0eb6dd6386f447673e06
+07:54:06,380 INF modules.payloads.payload.dnf.transaction_progress: Installed: pcre2-syntax-10.42-1.fc38.1.noarch 1674179550 4f19a70d3fbf30ac298700d3918d7fb483a387adf3d08b96efaa07d51dd0b156
+07:54:06,397 INF modules.payloads.payload.dnf.transaction_progress: Installed: ncurses-base-6.4-3.20230114.fc38.noarch 1674172884 f5c2b7e34cd518428e2b57b97d53038a35112bfd7dcf70b99a362edf6df03174
+07:54:06,506 INF modules.payloads.payload.dnf.transaction_progress: Installed: libssh-config-0.10.4-4.fc39.noarch 1678049532 1bc707f6df0aac3eb69be6e32be2edb32c772c1afb63300577e72fcec472af54
+07:54:06,525 INF modules.payloads.payload.dnf.transaction_progress: Installed: libreport-filesystem-2.17.8-1.fc39.noarch 1677836477 c16cf2f6b3674554a1ddb180f7de37e09e5d400d103a4ca3d6bd3f7028a7c7d1
+07:54:06,565 INF modules.payloads.payload.dnf.transaction_progress: Installed: dnf-data-4.14.0-2.fc38.noarch 1674092774 2f94a3f54fa22b89c3409fe1c0adaf4fd1c952e15550ede9a0938877a0483f57
+07:54:06,587 INF modules.payloads.payload.dnf.transaction_progress: Installed: fedora-gpg-keys-39-0.1.noarch 1675892983 04db736a77296edd4099a9165d68560d52dbf2484d959f668b3b676d68581f97
+07:54:06,662 INF modules.payloads.payload.dnf.transaction_progress: Installed: fedora-release-container-39-0.5.noarch 1678139717 fa502a99d38fbe559283f7d86ec029f535dd3808e9d95d703f718974e089c675
+07:54:06,668 INF modules.payloads.payload.dnf.transaction_progress: Installed: fedora-release-common-39-0.5.noarch 1678139717 69c9711600ede5bd00494ae8dafa400121de28f70cb4784f4546b8810c4b4cd3
+07:54:06,693 INF modules.payloads.payload.dnf.transaction_progress: Installed: fedora-repos-rawhide-39-0.1.noarch 1675892983 3908078cd7debb2b2e081a7ea30fdf598f702ba7e65db7159836403940ed2421
+07:54:06,704 INF modules.payloads.payload.dnf.transaction_progress: Installed: fedora-repos-39-0.1.noarch 1675892983 8ecb72298a8b662ee1a17e7fb4e1d279d7fc64b358c9fdf9a568a965022b3f97
+07:54:06,718 INF modules.payloads.payload.dnf.transaction_progress: Installed: setup-2.14.3-3.fc39.noarch 1676999235 e10c0ec1a70226866cd13c044cdb398d519fa28ae3f2cf5747b6ce799d3bd0c5
+07:54:07,167 INF modules.payloads.payload.dnf.transaction_progress: Configuring (running scriptlet for): setup-2.14.3-3.fc39.noarch 1676999235 e10c0ec1a70226866cd13c044cdb398d519fa28ae3f2cf5747b6ce799d3bd0c5
+07:54:07,205 INF modules.payloads.payload.dnf.transaction_progress: Installed: filesystem-3.18-4.fc39.x86_64 1677000960 38e188b7682c3df92bcebd568812b4f0de6f35d785a7d3e568acc3e6e14c28c7
+07:54:07,459 INF modules.payloads.payload.dnf.transaction_progress: Installed: basesystem-11-15.fc38.noarch 1674082093 16d1843cdac488ad04bdc654dd6b8dfbfeafe33a7728695070481302a7e54345
+07:54:07,476 INF modules.payloads.payload.dnf.transaction_progress: Installed: glibc-minimal-langpack-2.37.9000-3.fc39.x86_64 1678156773 4b30c7dc86e31ea87fcdbd58c9ee126c8af9a84bc8a23cf30858af5e8ae8c822
+07:54:07,488 INF modules.payloads.payload.dnf.transaction_progress: Installed: glibc-common-2.37.9000-3.fc39.x86_64 1678156773 1573a247a3f3a89273c1bf230cd5a62196c5aa22ddf13d0c44684ff3ad78ca9b
+07:54:07,559 INF modules.payloads.payload.dnf.transaction_progress: Configuring (running scriptlet for): glibc-2.37.9000-3.fc39.x86_64 1678156773 e911b2035148f19a606bdd11bbcca202e673b1e3d8c6dbff989b77b2ff761fd9
+07:54:07,560 INF modules.payloads.payload.dnf.transaction_progress: Installed: glibc-2.37.9000-3.fc39.x86_64 1678156773 e911b2035148f19a606bdd11bbcca202e673b1e3d8c6dbff989b77b2ff761fd9
+07:54:07,714 INF modules.payloads.payload.dnf.transaction_progress: Configuring (running scriptlet for): glibc-2.37.9000-3.fc39.x86_64 1678156773 e911b2035148f19a606bdd11bbcca202e673b1e3d8c6dbff989b77b2ff761fd9
+07:54:07,741 INF modules.payloads.payload.dnf.transaction_progress: Installed: ncurses-libs-6.4-3.20230114.fc38.x86_64 1674172898 c611cb6193f4bb3971727d46a5f02a196d4d594fbc00ee76d22668e5f9eac477
+07:54:07,786 INF modules.payloads.payload.dnf.transaction_progress: Installed: bash-5.2.15-3.fc38.x86_64 1675674043 aafa892d920ab841a6e6076da3f0bfd4d5783a88927473acb6fd8cdff1686f90
+07:54:07,842 INF modules.payloads.payload.dnf.transaction_progress: Configuring (running scriptlet for): bash-5.2.15-3.fc38.x86_64 1675674043 aafa892d920ab841a6e6076da3f0bfd4d5783a88927473acb6fd8cdff1686f90
+07:54:07,844 INF modules.payloads.payload.dnf.transaction_progress: Installed: zlib-1.2.13-3.fc38.x86_64 1674289566 6fc47cd2f53b150153a3865c2fbd6b1c57fcc265fb3602b6f4f3883cf6ec64e2
+07:54:07,861 INF modules.payloads.payload.dnf.transaction_progress: Installed: bzip2-libs-1.0.8-13.fc38.x86_64 1674085071 e0214026e8899bf3455f97bed98c287644e52f9350ce977fd0ccab05dbb35b77
+07:54:07,877 INF modules.payloads.payload.dnf.transaction_progress: Installed: libzstd-1.5.4-1.fc39.x86_64 1676293839 e3fa33d2f4eb43a83bcf3ddc2775d0a7c272183a1ef6f2d5c0ff9cf95a983d73
+07:54:07,922 INF modules.payloads.payload.dnf.transaction_progress: Installed: xz-libs-5.4.1-1.fc38.x86_64 1674467882 80a1d66fcdf2572fb1583b3a2e8a342dc9375aa4205f002aa7d798df7011ffc5
+07:54:07,941 INF modules.payloads.payload.dnf.transaction_progress: Installed: sqlite-libs-3.40.1-2.fc38.x86_64 1674274148 e96e91ff1c7b0667539c2d00d1f674a4b97638bfe1b6bc2eb2dfeaa59c127f9f
+07:54:07,983 INF modules.payloads.payload.dnf.transaction_progress: Installed: libcap-2.48-6.fc38.x86_64 1674147447 e848c54481fef3a2afc80a5c38dfd580ec05d821d65361d48a989128c36e5aaf
+07:54:08,007 INF modules.payloads.payload.dnf.transaction_progress: Installed: popt-1.19-2.fc38.x86_64 1674209762 00c43379a70e7167e59f71d7da775489dc2f218c768cff68c1edc8e51f35c2c5
+07:54:08,031 INF modules.payloads.payload.dnf.transaction_progress: Installed: gmp-1:6.2.1-4.fc38.x86_64 1674106204 b940446486f6dfaa2a7651fd9cf7050cae6171d75b7fca865fa8d58400c1a0c7
+07:54:08,092 INF modules.payloads.payload.dnf.transaction_progress: Installed: libgpg-error-1.46-2.fc38.x86_64 1674149361 3aa69b60ec18c1fc47367041aca9dea0582fa14b31c7bee12538c4106acce87f
+07:54:08,123 INF modules.payloads.payload.dnf.transaction_progress: Installed: libuuid-2.38.1-4.fc38.x86_64 1674281245 c05ae7b8c8c32ece4656d4aa296c383e9327168c1417232caca03612ff7f043e
+07:54:08,137 INF modules.payloads.payload.dnf.transaction_progress: Installed: libxml2-2.10.3-3.fc38.x86_64 1674159066 b9a9659d705cbafd77164f6e9aad0990c4f28822216f59750d3a6835815f688d
+07:54:09,451 INF modules.payloads.payload.dnf.transaction_progress: Installed: libxcrypt-4.4.33-7.fc39.x86_64 1675982257 71a9cbe5c77f55cac9084cbff178924e28b44981a53f82c66c3053521875c39b
+07:54:09,475 INF modules.payloads.payload.dnf.transaction_progress: Installed: lua-libs-5.4.4-9.fc39.x86_64 1676405653 245491bf843da1571cd8b6f16ec3e9569c4b983bef02a28fd53e63a1fac9fa21
+07:54:09,496 INF modules.payloads.payload.dnf.transaction_progress: Installed: elfutils-libelf-0.189-1.fc39.x86_64 1677862362 450ad2cb89b8e99a9e285a87e5942e1eb04c19da70afd229a9c0a168860b64d1
+07:54:09,524 INF modules.payloads.payload.dnf.transaction_progress: Installed: file-libs-5.44-2.fc39.x86_64 1675961526 e9d47d4f8c115837a086789d8da306a435a77f25789ebad06c110da407864f34
+07:54:09,648 INF modules.payloads.payload.dnf.transaction_progress: Installed: readline-8.2-3.fc38.x86_64 1674247147 1a878a4a0448222e0a34864ef4f3c8b674b05ef08a05ea992d9c50b3ecbae10d
+07:54:09,673 INF modules.payloads.payload.dnf.transaction_progress: Installed: libattr-2.5.1-6.fc38.x86_64 1674081312 2a6b60b523093bc2c3f31a14618c3f168faf5b9088cb422e08c450af62292153
+07:54:09,688 INF modules.payloads.payload.dnf.transaction_progress: Installed: libacl-2.3.1-6.fc38.x86_64 1675084646 2bd57ae89a0e8c2205bb8a043e605a445e1983834f1fe8d29edccb7ee8ecb0dd
+07:54:09,712 INF modules.payloads.payload.dnf.transaction_progress: Installed: libeconf-0.4.0-5.fc38.x86_64 1674148263 ed115185dd2524d6ad37c4e5a7c26c2ef11461ddd2d52a4e0c73c9b61963f709
+07:54:09,752 INF modules.payloads.payload.dnf.transaction_progress: Installed: libffi-3.4.4-2.fc38.x86_64 1674148556 4cdee7e7f885d9efe8156bd86e644e2b45f34537870f30c17bbd5113e493b994
+07:54:09,775 INF modules.payloads.payload.dnf.transaction_progress: Installed: p11-kit-0.24.1-6.fc38.x86_64 1674178541 3d099f56457cac6b78d5a7fa1a288449b2fd40940ba79c38f3a8cdf72de08d0b
+07:54:09,821 INF modules.payloads.payload.dnf.transaction_progress: Installed: libsmartcols-2.38.1-4.fc38.x86_64 1674281245 10295dcfa946c6fb7b52c1b8781da4dc6c59dc8fc0e07bab2f3187fc1f143b9a
+07:54:09,843 INF modules.payloads.payload.dnf.transaction_progress: Installed: libstdc++-13.0.1-0.6.fc39.x86_64 1677956859 4879018880886651208d90a74357ff33d9230f1cfe05a0c6efc21fcdfe21acba
+07:54:09,912 INF modules.payloads.payload.dnf.transaction_progress: Installed: pcre2-10.42-1.fc38.1.x86_64 1674179549 8e9d90ae76137486c9584ad0ff007348d83349fe97e29310659b13057dba78b4
+07:54:09,935 INF modules.payloads.payload.dnf.transaction_progress: Installed: libblkid-2.38.1-4.fc38.x86_64 1674281245 f07644af2a3529eac157814f85268a09d8697ceb068ebd564011789d7ca8391d
+07:54:09,955 INF modules.payloads.payload.dnf.transaction_progress: Installed: libassuan-2.5.5-6.fc38.x86_64 1674147114 13b6ee1aaadee8fc6ad6713f6fcca12d340d8b662c341ef11eb1bbca9f28b1d0
+07:54:09,977 INF modules.payloads.payload.dnf.transaction_progress: Installed: expat-2.5.0-2.fc38.x86_64 1674097663 2af61bff099ba092381fc3bcfad33abeb46e0bbd80d39957160ebeeeae6662af
+07:54:10,000 INF modules.payloads.payload.dnf.transaction_progress: Installed: gdbm-libs-1:1.23-3.fc38.x86_64 1674103373 212cb1084c3d5a05d12308d768417dd12678a860ccfc89c2f70dada566e11259
+07:54:10,093 INF modules.payloads.payload.dnf.transaction_progress: Installed: json-c-0.16-4.fc38.x86_64 1674137587 d06140e05f5d7c831331260a898d83e5079a3ead0f4616925dd94da8a33e5ede
+07:54:10,140 INF modules.payloads.payload.dnf.transaction_progress: Installed: keyutils-libs-1.6.1-6.fc38.x86_64 1674139816 a8003e886f65342e06c75edaef2bc54b1f313a9b19ba3d8b573b7b72a9583d87
+07:54:10,158 INF modules.payloads.payload.dnf.transaction_progress: Installed: libcom_err-1.46.5-4.fc38.x86_64 1674095064 7eee29c05014366ade22f339b3b064bdda71a02d76d833173127255e2bc87c8a
+07:54:10,177 INF modules.payloads.payload.dnf.transaction_progress: Installed: libgomp-13.0.1-0.6.fc39.x86_64 1677956859 49e5cc3613a661ac06ba5c14513f4dd3d752b7a4b308a8ece3bdd81468cf2aa3
+07:54:10,196 INF modules.payloads.payload.dnf.transaction_progress: Installed: libsepol-3.5-1.fc39.x86_64 1677235980 a119520536c2d78fe4ab09fa36de55321fa5a926aca955640504d6fa7e98790b
+07:54:10,222 INF modules.payloads.payload.dnf.transaction_progress: Installed: libselinux-3.5-1.fc39.x86_64 1677238335 a861e4c858fb8b7b246c9a5156780ef9188e5058b430a09d5274cf8154e4651b
+07:54:10,245 INF modules.payloads.payload.dnf.transaction_progress: Installed: sed-4.8-12.fc38.x86_64 1674272136 13767df6745449f9458b4097fd10cdc5a6f577f53a14cf4d3608052a9cb368a3
+07:54:10,268 INF modules.payloads.payload.dnf.transaction_progress: Installed: libmount-2.38.1-4.fc38.x86_64 1674281245 ea61e5c61c7df5d65ff43dfa34c3e6fc2420bd1e479d4e15519023c1b832e261
+07:54:10,287 INF modules.payloads.payload.dnf.transaction_progress: Installed: libtasn1-4.19.0-2.fc38.x86_64 1674156773 755f70836736d33825f0ca0a30966364f9c47f336a9679647806efca38935468
+07:54:10,310 INF modules.payloads.payload.dnf.transaction_progress: Installed: libunistring1.0-1.0-1.fc38.x86_64 1674613554 a437f855037feb83c8388e0d7799050d178a0e33b72ca2b2845ade7182ad104a
+07:54:10,366 INF modules.payloads.payload.dnf.transaction_progress: Installed: libidn2-2.3.4-2.fc38.x86_64 1674149891 e24b40ad581933d9ca22b525c434777d90a46cb4c0b097c497c788e49fd946d4
+07:54:10,405 INF modules.payloads.payload.dnf.transaction_progress: Installed: lz4-libs-1.9.4-2.fc38.x86_64 1674162976 1a2dd2ddcf1ab7a789633d7a0f5890b0fe12c96ad3c88c7a5f8df547190fdb32
+07:54:10,429 INF modules.payloads.payload.dnf.transaction_progress: Installed: systemd-libs-253.1-4.fc39.x86_64 1677871685 199b1cd22fe6fb5f3a1d8035dc4f6348486ce9f623618714085fe641221decd7
+07:54:10,521 INF modules.payloads.payload.dnf.transaction_progress: Installed: libpsl-0.21.2-2.fc38.x86_64 1674153727 8cb49ad623d30a9fbe923b31b0413732b22f8763ec719efdcb535a356a9d0d6b
+07:54:10,542 INF modules.payloads.payload.dnf.transaction_progress: Installed: findutils-1:4.9.0-3.fc38.x86_64 1674099292 dec19668dc6051323597760b1dcfba516e049d99f4d4faba181ab89bb76dfd26
+07:54:10,583 INF modules.payloads.payload.dnf.transaction_progress: Installed: libb2-0.98.1-8.fc38.x86_64 1674147259 9dc90426b66ef657dd666b8cff6a8b79d97049940e04fe432c1679407d7190a0
+07:54:10,598 INF modules.payloads.payload.dnf.transaction_progress: Installed: cyrus-sasl-lib-2.1.28-9.fc38.x86_64 1674091352 288c3f12e3c1c65e522c82a1583eb57972b595ff4e62c685b904b6e479d67093
+07:54:10,651 INF modules.payloads.payload.dnf.transaction_progress: Installed: libcomps-0.1.19-1.fc39.x86_64 1677628996 6560c92ce0aa25d6a32a4f3ebac4c3a3713c88d14456f570da3159886152ef8a
+07:54:10,672 INF modules.payloads.payload.dnf.transaction_progress: Installed: grep-3.9-1.fc39.x86_64 1678203477 1edd6d0c726af868fe64c6fb8e62b72e55dbad94ae0e3a835548aa1160f57bda
+07:54:10,698 INF modules.payloads.payload.dnf.transaction_progress: Installed: libgcrypt-1.10.1-7.fc38.x86_64 1674148777 f13a3ba0f10a4924a4ac460a506e45559421b392ecf5c2ee258661e19ed93941
+07:54:10,730 INF modules.payloads.payload.dnf.transaction_progress: Installed: libksba-1.6.3-2.fc38.x86_64 1674150593 7036d00dd6f881adb9e4870edfd5a1240f5b647084ed53be464cf8cc6d40c452
+07:54:10,751 INF modules.payloads.payload.dnf.transaction_progress: Installed: mpfr-4.1.1-3.fc38.x86_64 1674171531 4dce785f0955e4bc212f5642fbf76752e8e758fddaf31d423c76064442c382a4
+07:54:10,793 INF modules.payloads.payload.dnf.transaction_progress: Installed: nettle-3.8-3.fc38.x86_64 1674173400 1ab436b853babb890810427c0906f401a8778570d9c106aae2a93dd689b56395
+07:54:10,828 INF modules.payloads.payload.dnf.transaction_progress: Installed: elfutils-default-yama-scope-0.189-1.fc39.noarch 1677862332 f33f41efdeb7ed371ca73539df63e0a24e1ba6f1c08eb6b3a13efeee143c22cf
+07:54:10,840 INF modules.payloads.payload.dnf.transaction_progress: Configuring (running scriptlet for): elfutils-default-yama-scope-0.189-1.fc39.noarch 1677862332 f33f41efdeb7ed371ca73539df63e0a24e1ba6f1c08eb6b3a13efeee143c22cf
+07:54:10,884 INF modules.payloads.payload.dnf.transaction_progress: Installed: elfutils-libs-0.189-1.fc39.x86_64 1677862362 70059465e292dc49a920ef7db57d26e82410aebf6ab8d1264d8e2716c19f6645
+07:54:10,917 INF modules.payloads.payload.dnf.transaction_progress: Installed: alternatives-1.21-2.fc38.x86_64 1674086636 ba73a191eecdd07dfdf6c9e9c05ee8a7fc033d00ab22f71c9d765a9f79430932
+07:54:10,937 INF modules.payloads.payload.dnf.transaction_progress: Installed: p11-kit-trust-0.24.1-6.fc38.x86_64 1674178541 17ccfb5f326ac494420b346b6a19633f6a29666edff3bd2927b24a181c30043d
+07:54:10,960 INF modules.payloads.payload.dnf.transaction_progress: Configuring (running scriptlet for): p11-kit-trust-0.24.1-6.fc38.x86_64 1674178541 17ccfb5f326ac494420b346b6a19633f6a29666edff3bd2927b24a181c30043d
+07:54:10,983 INF modules.payloads.payload.dnf.transaction_progress: Installed: libbrotli-1.0.9-11.fc38.x86_64 1674084473 1437effaa1e9cef61e6d942b5e7e352965d33e44666805fd4107f660d7a825e9
+07:54:11,015 INF modules.payloads.payload.dnf.transaction_progress: Installed: libcap-ng-0.8.3-5.fc38.x86_64 1674147466 5a8b121b402d579ba941a7e47513e68ffce46211b252d022ceef6d38706f7328
+07:54:12,315 INF modules.payloads.payload.dnf.transaction_progress: Installed: audit-libs-3.1-2.fc39.x86_64 1675959609 2ba219030ec4140c0275c00482cbf8a8130e27d6185eea52f715350656a7f853
+07:54:12,380 INF modules.payloads.payload.dnf.transaction_progress: Installed: pam-libs-1.5.2-17.fc39.x86_64 1678094259 cf1084af759222796497ae1db44733d8572475170e706828af4d4c0c093a3da2
+07:54:12,409 INF modules.payloads.payload.dnf.transaction_progress: Installed: libsemanage-3.5-1.fc39.x86_64 1677239972 a6cf83800141978f0b6f88a9cf218ddeaf84ad7459f2270f1bbf6da32f18d4cf
+07:54:12,481 INF modules.payloads.payload.dnf.transaction_progress: Installed: shadow-utils-2:4.13-6.fc39.x86_64 1678101070 c8a2cbec7fc78f885cf077f6ee088e64634a48694b94e611ad57f9ee15314731
+07:54:12,593 INF modules.payloads.payload.dnf.transaction_progress: Installed: libdb-5.3.28-55.fc38.x86_64 1674147988 24b6237f18f6e0643e96a882d3711b5e7411256fffc547ee1a4daa7da0a62f9d
+07:54:12,640 INF modules.payloads.payload.dnf.transaction_progress: Installed: libnghttp2-1.52.0-1.fc39.x86_64 1676368127 893c52ea0bac3758fb0c61c6449a7204fb088193d5ad2f0480ab8ef7af40e59a
+07:54:12,657 INF modules.payloads.payload.dnf.transaction_progress: Installed: libsigsegv-2.14-4.fc38.x86_64 1674155389 2f95ec8a9e82166735d2a0dad196caf86d3b03b1d751333664fdc49af04652e3
+07:54:12,684 INF modules.payloads.payload.dnf.transaction_progress: Installed: gawk-5.1.1-5.fc38.x86_64 1674504607 319b782e36d052581555edca137af6095cc1aaac007d9bdc1d963893085587c5
+07:54:12,757 INF modules.payloads.payload.dnf.transaction_progress: Installed: libunistring-1.1-3.fc38.x86_64 1674157761 2cf3c52adb539112d160d78ad0eb0536f41a4fc0087ca74043de59267ae397ac
+07:54:12,837 INF modules.payloads.payload.dnf.transaction_progress: Installed: gnutls-3.8.0-3.fc39.x86_64 1678520366 e3d7753b1ab0a74908e45a734a5bfd6d4ae646b91a4ea345b7264eb5cdec784d
+07:54:12,941 INF modules.payloads.payload.dnf.transaction_progress: Installed: glib2-2.75.4-2.fc39.x86_64 1678128149 36a64a62d2f251871c1616451befd54d2761448d668de0371e05a59a185c99c3
+07:54:13,063 INF modules.payloads.payload.dnf.transaction_progress: Installed: libverto-0.3.2-5.fc38.x86_64 1674158149 a724e47d0afbe9ea8b8750ac8b1db8e1faad7cb77f7dc1907990789f5f5dec71
+07:54:13,075 INF modules.payloads.payload.dnf.transaction_progress: Installed: libyaml-0.2.5-9.fc38.x86_64 1674159211 dae1b79663b5e2810668f0b9350e5d62b64af07cf3e6a85da386b4accd08b699
+07:54:13,094 INF modules.payloads.payload.dnf.transaction_progress: Installed: mpdecimal-2.5.1-6.fc38.x86_64 1674568050 c98c47d647f33a5a552c0031d1c7b035a9f54a8a0ba64d220f1b90d4cb990926
+07:54:13,113 INF modules.payloads.payload.dnf.transaction_progress: Installed: npth-1.6-12.fc38.x86_64 1674174628 fdfcd7132d187c79dc0f3752e14f7b4e990a2390c9e62f119e648988403fd977
+07:54:13,131 INF modules.payloads.payload.dnf.transaction_progress: Installed: fedora-repos-rawhide-modular-39-0.1.noarch 1675892983 a6eddeba57693006d1585bb2e34f660d35ee7135bf9145001c247e25da2b738f
+07:54:13,146 INF modules.payloads.payload.dnf.transaction_progress: Installed: coreutils-common-9.1-11.fc38.x86_64 1674089887 8b6f3880d1daa1e26cbc410cb9a297be024967d49aa60a660c4e3bb210c1867b
+07:54:13,192 INF modules.payloads.payload.dnf.transaction_progress: Installed: openssl-libs-1:3.0.8-1.fc39.x86_64 1675962243 bed6e9157e37283845bfd06b1f2e42b3b921e7f7c17786bd48fa535c3da17c15
+07:54:13,304 INF modules.payloads.payload.dnf.transaction_progress: Installed: coreutils-9.1-11.fc38.x86_64 1674089887 7867d881d29f8c33cb137a99f2c6bbe01456e502291fdb760e7542c8c291b4ea
+07:54:13,504 INF modules.payloads.payload.dnf.transaction_progress: Configuring (running scriptlet for): ca-certificates-2023.2.60-2.fc38.noarch 1674242190 3ed298c957602edb7ce91e0d06c4cc876c645d5e9848cd9553b5521ab1dba8a0
+07:54:13,529 INF modules.payloads.payload.dnf.transaction_progress: Installed: ca-certificates-2023.2.60-2.fc38.noarch 1674242190 3ed298c957602edb7ce91e0d06c4cc876c645d5e9848cd9553b5521ab1dba8a0
+07:54:13,594 INF modules.payloads.payload.dnf.transaction_progress: Configuring (running scriptlet for): ca-certificates-2023.2.60-2.fc38.noarch 1674242190 3ed298c957602edb7ce91e0d06c4cc876c645d5e9848cd9553b5521ab1dba8a0
+07:54:16,564 INF modules.payloads.payload.dnf.transaction_progress: Installed: rpm-sequoia-1.3.0-1.fc39.x86_64 1678136915 d77c48d393ffada69140de4d0adb89cec02153c6884d5829d2ed30b422cde82b
+07:54:16,623 INF modules.payloads.payload.dnf.transaction_progress: Installed: rpm-libs-4.18.0-11.fc39.x86_64 1676549769 44c3fd81aa5de107c630c8ad571f225e5338450d24df4dcdf2de1b00f619ea20
+07:54:16,649 INF modules.payloads.payload.dnf.transaction_progress: Installed: krb5-libs-1.20.1-9.fc39.x86_64 1676308116 96e794f0c3a2d542760e6584f792b76b187699f58e218ea84d1232d1f43ed0fe
+07:54:16,718 INF modules.payloads.payload.dnf.transaction_progress: Installed: libtirpc-1.3.3-1.fc38.x86_64 1674157234 633ce6404f6ac32892f2124fa9d8e511ed6d2e3c31d6c9fcb5f9f183416547ad
+07:54:16,738 INF modules.payloads.payload.dnf.transaction_progress: Installed: libnsl2-2.0.0-5.fc38.x86_64 1674152253 e88d40b14861564cbbf640d366076b5b381cc3a30d818930f043dfb3f158e68a
+07:54:16,754 INF modules.payloads.payload.dnf.transaction_progress: Installed: libmodulemd-2.14.0-5.fc38.x86_64 1674151445 858e728f42806ce65520953f756c178764c60e29e1a3fa1ea1e1eb95b14950b9
+07:54:16,776 INF modules.payloads.payload.dnf.transaction_progress: Installed: libfsverity-1.4-9.fc38.x86_64 1674101481 46ad13e6eff5121db286acced0da073331084546f13b832b64d3298b531549dd
+07:54:16,832 INF modules.payloads.payload.dnf.transaction_progress: Installed: zchunk-libs-1.3.0-1.fc39.x86_64 1677337432 473274e5b2d2b84575bbb14a145efd15aa638ce14b543b66118bb90d55c3dc3c
+07:54:16,852 INF modules.payloads.payload.dnf.transaction_progress: Installed: libsolv-0.7.22-4.fc38.x86_64 1674155829 8ac4cd82686478387e18d884e52254370152123a14a6476ece6810b78e0fc9fe
+07:54:16,893 INF modules.payloads.payload.dnf.transaction_progress: Installed: libssh-0.10.4-4.fc39.x86_64 1678049526 1ee7aaf7efddee4b3dcbad1e7b13f79c4ea58f40d6d0734a29dca359f540930d
+07:54:16,914 INF modules.payloads.payload.dnf.transaction_progress: Installed: rpm-build-libs-4.18.0-11.fc39.x86_64 1676549769 331acbb0c5893e89fdb278c15eaebbc7d8bb07bbb2ed9f25512ae76cb1d1944c
+07:54:16,929 INF modules.payloads.payload.dnf.transaction_progress: Installed: python-pip-wheel-23.0.1-1.fc39.noarch 1677163495 b0d44fc3728295b16ee16e3eea5981c56115ef494e0e1dbabc04670c3a99aad9
+07:54:16,958 INF modules.payloads.payload.dnf.transaction_progress: Installed: python3-3.11.2-1.fc39.x86_64 1676150569 9ed4609b92a2f2ecebed214447b4f3ba450a5e86e52209af421b45bdedface8c
+07:54:16,985 INF modules.payloads.payload.dnf.transaction_progress: Installed: python3-libs-3.11.2-1.fc39.x86_64 1676150569 1f8b50a8229265341fdefc8472f9d36897e6430439c159d6a3aa87e186f92f6a
+07:54:21,112 INF modules.payloads.payload.dnf.transaction_progress: Installed: python3-libcomps-0.1.19-1.fc39.x86_64 1677628996 4f681573fef55f017cd82920f5bc86193103499a64b6dc60a7e7c63d2713a4bf
+07:54:21,136 INF modules.payloads.payload.dnf.transaction_progress: Configuring (running scriptlet for): authselect-libs-1.4.2-2.fc38.x86_64 1674081505 156c71be29a4227e99d5198272a6fdbd38f25884de10bd3b03722602f383e56d
+07:54:21,137 INF modules.payloads.payload.dnf.transaction_progress: Installed: authselect-libs-1.4.2-2.fc38.x86_64 1674081505 156c71be29a4227e99d5198272a6fdbd38f25884de10bd3b03722602f383e56d
+07:54:21,202 INF modules.payloads.payload.dnf.transaction_progress: Installed: authselect-1.4.2-2.fc38.x86_64 1674081505 f4a9066b30983c17036794e7873dcd62acb2559ebd298d00bbf27a555bc1e0db
+07:54:21,216 INF modules.payloads.payload.dnf.transaction_progress: Installed: gzip-1.12-3.fc38.x86_64 1674130608 2ee988694d3c875dcaa4741453ee07b4dc1da31205abb035065dbc7c8c72c0da
+07:54:21,248 INF modules.payloads.payload.dnf.transaction_progress: Installed: cracklib-2.9.7-31.fc38.x86_64 1674090286 d792de0f75798996e8cf2851ae04b3a47d3e267bacffbfcfb02a3d9571f9be00
+07:54:21,275 INF modules.payloads.payload.dnf.transaction_progress: Installed: libpwquality-1.4.5-3.fc38.x86_64 1675292291 893d2125cc10c36b67e5d04544015be0f27d5a99e2ac83ba14904219c5e15d68
+07:54:21,303 INF modules.payloads.payload.dnf.transaction_progress: Installed: pam-1.5.2-17.fc39.x86_64 1678094259 2759df9eae082382df537953d18a34d81203837669ec30d13d5e6c2ed1345ea3
+07:54:21,424 INF modules.payloads.payload.dnf.transaction_progress: Installed: libarchive-3.6.1-5.fc39.x86_64 1675970968 c4b337632153e008b8fcd39c5cafedb90fb03c6e765ebc610b0effb6e9409721
+07:54:21,453 INF modules.payloads.payload.dnf.transaction_progress: Installed: libevent-2.1.12-8.fc38.x86_64 1674148490 0bb1b0d7fa1b5107c98636cc9046912b848e770eefa43161127392bb86ab4559
+07:54:21,486 INF modules.payloads.payload.dnf.transaction_progress: Installed: openldap-2.6.4-1.fc39.x86_64 1677560683 665924d246f41013251f24cc626757abd2a932fb12c58c25d4e8bb005c36605f
+07:54:21,538 INF modules.payloads.payload.dnf.transaction_progress: Installed: libcurl-7.88.1-1.fc39.x86_64 1676901145 ccdcc7c5e8bdc1eda8407a6644dc5ed8f66b4915ad7e54c462373b4e8b7e5f19
+07:54:21,598 INF modules.payloads.payload.dnf.transaction_progress: Installed: gnupg2-2.4.0-3.fc39.x86_64 1678086203 4ef881ad8a2f683020cb4d49a4bac6a8947ca5f826266391da945834f95b42ce
+07:54:21,802 INF modules.payloads.payload.dnf.transaction_progress: Installed: gpgme-1.17.1-5.fc39.x86_64 1677855729 a8a381267845f761809f10b8d27db002a1a5c6b2b54bd6720fa0d921439268f1
+07:54:21,852 INF modules.payloads.payload.dnf.transaction_progress: Installed: librepo-1.15.1-2.fc38.x86_64 1674154372 f18410a0d1d25049f39315372924c318314254cba55f2d3f24d0c28e31cbbbb5
+07:54:21,871 INF modules.payloads.payload.dnf.transaction_progress: Installed: libdnf-0.68.0-2.fc38.x86_64 1674148122 42e46182681bfe0c685d7e869949ef53cd6eb626394f170701763cf672b6a58f
+07:54:21,957 INF modules.payloads.payload.dnf.transaction_progress: Installed: python3-libdnf-0.68.0-2.fc38.x86_64 1674148122 8e133a1a5eeab8e27ee5a1912b5aa223be0e754b5b716637688ca1f92b174666
+07:54:23,573 INF modules.payloads.payload.dnf.transaction_progress: Installed: python3-hawkey-0.68.0-2.fc38.x86_64 1674148122 3aeae153e2766638275bd53c7eae554742abd112d19cbd97280a8a73da17ff71
+07:54:23,606 INF modules.payloads.payload.dnf.transaction_progress: Installed: python3-gpg-1.17.1-5.fc39.x86_64 1677855729 bc92a7bbe2583b989f0aafea98d1e12c3e1c7f86707145237bb2c7c359af0ea5
+07:54:23,685 INF modules.payloads.payload.dnf.transaction_progress: Installed: curl-7.88.1-1.fc39.x86_64 1676901145 2320484133302a774460dca284f0b78a41623a0169e935ca62b3e7c9ac291ce7
+07:54:23,705 INF modules.payloads.payload.dnf.transaction_progress: Configuring (running scriptlet for): tpm2-tss-4.0.1-3.fc38.x86_64 1674634446 d624895c7f19e23fb77b7f2ae21a9dcf0698820a3325ae5b1343f6bb612a178e
+07:54:23,874 INF modules.payloads.payload.dnf.transaction_progress: Installed: tpm2-tss-4.0.1-3.fc38.x86_64 1674634446 d624895c7f19e23fb77b7f2ae21a9dcf0698820a3325ae5b1343f6bb612a178e
+07:54:23,952 INF modules.payloads.payload.dnf.transaction_progress: Installed: ima-evm-utils-1.4-7.fc38.x86_64 1674134337 8e2016f65d87e1c489689bcaf3b6d4733f2c13755d74dbfd4efe03a3468fcf35
+07:54:23,970 INF modules.payloads.payload.dnf.transaction_progress: Installed: rpm-sign-libs-4.18.0-11.fc39.x86_64 1676549769 f7ad23cf45db9e826933e0134925de536630903718122e258a582ba2341bcec3
+07:54:23,991 INF modules.payloads.payload.dnf.transaction_progress: Installed: python3-rpm-4.18.0-11.fc39.x86_64 1676549769 ab38aa7848ca6f74dce1f38e8aa598fe5c291cb92dedbc0c02a6ee4354fc9ff6
+07:54:24,016 INF modules.payloads.payload.dnf.transaction_progress: Installed: python3-dnf-4.14.0-2.fc38.noarch 1674092774 6db332925770df5aa4d3001b8e2a3a0f186fbebe0490c171a54979c7fcfbdb0e
+07:54:24,318 INF modules.payloads.payload.dnf.transaction_progress: Installed: dnf-4.14.0-2.fc38.noarch 1674092774 222324aa021b47a03207847ab8cce05ba95a29bdcbff31b9d28076b76e6fdf76
+07:54:24,348 INF modules.payloads.payload.dnf.transaction_progress: Configuring (running scriptlet for): dnf-4.14.0-2.fc38.noarch 1674092774 222324aa021b47a03207847ab8cce05ba95a29bdcbff31b9d28076b76e6fdf76
+07:54:24,384 INF modules.payloads.payload.dnf.transaction_progress: Installed: yum-4.14.0-2.fc38.noarch 1674092774 da48b378e1147c5e1644aaa4196b739aea8117d2735731f65a66d07ea15eebc7
+07:54:24,409 INF modules.payloads.payload.dnf.transaction_progress: Configuring (running scriptlet for): rpm-4.18.0-11.fc39.x86_64 1676549769 8321f09000e84895f3ae6a52963761f2ab2a67fb36753a2d02f587f121e2b3ed
+07:54:24,450 INF modules.payloads.payload.dnf.transaction_progress: Installed: rpm-4.18.0-11.fc39.x86_64 1676549769 8321f09000e84895f3ae6a52963761f2ab2a67fb36753a2d02f587f121e2b3ed
+07:54:24,599 INF modules.payloads.payload.dnf.transaction_progress: Installed: sudo-1.9.13-1.p2.fc39.x86_64 1677689868 2b6641ff1b6004fc04d0e60e2bd48ba431d6e401c6eb907aa74b83f921c8b32e
+07:54:24,681 INF modules.payloads.payload.dnf.transaction_progress: Installed: fedora-repos-modular-39-0.1.noarch 1675892983 972b6cd69d4a5de2b42ea631762a8fb67dad9929388a2a84a03422fdea366e68
+07:54:24,700 INF modules.payloads.payload.dnf.transaction_progress: Installed: util-linux-core-2.38.1-4.fc38.x86_64 1674281245 4901b670be1372e70460dfcf943bc9e1442c190f64778c865d5a18dda80b0efc
+07:54:24,819 INF modules.payloads.payload.dnf.transaction_progress: Installed: tar-2:1.34-7.fc38.x86_64 1675349508 2aad30b0bfc8311f870d4276ad8380d49adc2b8a1faa604456cf5845082d2890
+07:54:24,850 INF modules.payloads.payload.dnf.transaction_progress: Installed: vim-minimal-2:9.0.1367-1.fc39.x86_64 1677740531 f9b5265223bcdf66924edd59838555a4c06d307fb51f740a6a4981fc54d641f6
+07:54:24,898 INF modules.payloads.payload.dnf.transaction_progress: Installed: rootfiles-8.1-33.fc38.noarch 1674247108 af32ae5ea7304141a49a026b6d50cb0a4f00ec1f6db2fbcc59f78fcd8c345058
+07:54:24,908 INF modules.payloads.payload.dnf.transaction_progress: Post installation setup phase started.
+07:54:24,946 INF modules.payloads.payload.dnf.transaction_progress: Configuring (running scriptlet for): filesystem-3.18-4.fc39.x86_64 1677000960 38e188b7682c3df92bcebd568812b4f0de6f35d785a7d3e568acc3e6e14c28c7
+07:54:24,949 INF modules.payloads.payload.dnf.transaction_progress: Configuring (running scriptlet for): ca-certificates-2023.2.60-2.fc38.noarch 1674242190 3ed298c957602edb7ce91e0d06c4cc876c645d5e9848cd9553b5521ab1dba8a0
+07:54:28,577 INF modules.payloads.payload.dnf.transaction_progress: Configuring (running scriptlet for): authselect-libs-1.4.2-2.fc38.x86_64 1674081505 156c71be29a4227e99d5198272a6fdbd38f25884de10bd3b03722602f383e56d
+07:54:28,650 INF modules.payloads.payload.dnf.transaction_progress: Configuring (running scriptlet for): rpm-4.18.0-11.fc39.x86_64 1676549769 8321f09000e84895f3ae6a52963761f2ab2a67fb36753a2d02f587f121e2b3ed
+07:54:28,669 INF modules.payloads.payload.dnf.transaction_progress: Configuring (running scriptlet for): rootfiles-8.1-33.fc38.noarch 1674247108 af32ae5ea7304141a49a026b6d50cb0a4f00ec1f6db2fbcc59f78fcd8c345058
+07:54:28,737 INF modules.payloads.payload.dnf.transaction_progress: Configuring (running scriptlet for): rootfiles-8.1-33.fc38.noarch 1674247108 af32ae5ea7304141a49a026b6d50cb0a4f00ec1f6db2fbcc59f78fcd8c345058
+07:54:28,806 INF modules.payloads.payload.dnf.transaction_progress: Configuring (running scriptlet for): rootfiles-8.1-33.fc38.noarch 1674247108 af32ae5ea7304141a49a026b6d50cb0a4f00ec1f6db2fbcc59f78fcd8c345058
+07:54:29,109 INF modules.payloads.payload.dnf.transaction_progress: Verifying: alternatives-1.21-2.fc38.x86_64 1674086636 ba73a191eecdd07dfdf6c9e9c05ee8a7fc033d00ab22f71c9d765a9f79430932
+07:54:29,110 INF modules.payloads.payload.dnf.transaction_progress: Verifying: audit-libs-3.1-2.fc39.x86_64 1675959609 2ba219030ec4140c0275c00482cbf8a8130e27d6185eea52f715350656a7f853
+07:54:29,111 INF modules.payloads.payload.dnf.transaction_progress: Verifying: authselect-1.4.2-2.fc38.x86_64 1674081505 f4a9066b30983c17036794e7873dcd62acb2559ebd298d00bbf27a555bc1e0db
+07:54:29,112 INF modules.payloads.payload.dnf.transaction_progress: Verifying: authselect-libs-1.4.2-2.fc38.x86_64 1674081505 156c71be29a4227e99d5198272a6fdbd38f25884de10bd3b03722602f383e56d
+07:54:29,113 INF modules.payloads.payload.dnf.transaction_progress: Verifying: basesystem-11-15.fc38.noarch 1674082093 16d1843cdac488ad04bdc654dd6b8dfbfeafe33a7728695070481302a7e54345
+07:54:29,113 INF modules.payloads.payload.dnf.transaction_progress: Verifying: bash-5.2.15-3.fc38.x86_64 1675674043 aafa892d920ab841a6e6076da3f0bfd4d5783a88927473acb6fd8cdff1686f90
+07:54:29,114 INF modules.payloads.payload.dnf.transaction_progress: Verifying: bzip2-libs-1.0.8-13.fc38.x86_64 1674085071 e0214026e8899bf3455f97bed98c287644e52f9350ce977fd0ccab05dbb35b77
+07:54:29,115 INF modules.payloads.payload.dnf.transaction_progress: Verifying: ca-certificates-2023.2.60-2.fc38.noarch 1674242190 3ed298c957602edb7ce91e0d06c4cc876c645d5e9848cd9553b5521ab1dba8a0
+07:54:29,117 INF modules.payloads.payload.dnf.transaction_progress: Verifying: coreutils-9.1-11.fc38.x86_64 1674089887 7867d881d29f8c33cb137a99f2c6bbe01456e502291fdb760e7542c8c291b4ea
+07:54:29,118 INF modules.payloads.payload.dnf.transaction_progress: Verifying: coreutils-common-9.1-11.fc38.x86_64 1674089887 8b6f3880d1daa1e26cbc410cb9a297be024967d49aa60a660c4e3bb210c1867b
+07:54:29,119 INF modules.payloads.payload.dnf.transaction_progress: Verifying: cracklib-2.9.7-31.fc38.x86_64 1674090286 d792de0f75798996e8cf2851ae04b3a47d3e267bacffbfcfb02a3d9571f9be00
+07:54:29,120 INF modules.payloads.payload.dnf.transaction_progress: Verifying: crypto-policies-20230301-1.gita12f7b2.fc39.noarch 1678127486 67b6c981dbc626378729138b7eec77198053d6c4c354a5c638901afa30c5a847
+07:54:29,120 INF modules.payloads.payload.dnf.transaction_progress: Verifying: curl-7.88.1-1.fc39.x86_64 1676901145 2320484133302a774460dca284f0b78a41623a0169e935ca62b3e7c9ac291ce7
+07:54:29,121 INF modules.payloads.payload.dnf.transaction_progress: Verifying: cyrus-sasl-lib-2.1.28-9.fc38.x86_64 1674091352 288c3f12e3c1c65e522c82a1583eb57972b595ff4e62c685b904b6e479d67093
+07:54:29,122 INF modules.payloads.payload.dnf.transaction_progress: Verifying: dnf-4.14.0-2.fc38.noarch 1674092774 222324aa021b47a03207847ab8cce05ba95a29bdcbff31b9d28076b76e6fdf76
+07:54:29,122 INF modules.payloads.payload.dnf.transaction_progress: Verifying: dnf-data-4.14.0-2.fc38.noarch 1674092774 2f94a3f54fa22b89c3409fe1c0adaf4fd1c952e15550ede9a0938877a0483f57
+07:54:29,123 INF modules.payloads.payload.dnf.transaction_progress: Verifying: elfutils-default-yama-scope-0.189-1.fc39.noarch 1677862332 f33f41efdeb7ed371ca73539df63e0a24e1ba6f1c08eb6b3a13efeee143c22cf
+07:54:29,123 INF modules.payloads.payload.dnf.transaction_progress: Verifying: elfutils-libelf-0.189-1.fc39.x86_64 1677862362 450ad2cb89b8e99a9e285a87e5942e1eb04c19da70afd229a9c0a168860b64d1
+07:54:29,124 INF modules.payloads.payload.dnf.transaction_progress: Verifying: elfutils-libs-0.189-1.fc39.x86_64 1677862362 70059465e292dc49a920ef7db57d26e82410aebf6ab8d1264d8e2716c19f6645
+07:54:29,124 INF modules.payloads.payload.dnf.transaction_progress: Verifying: expat-2.5.0-2.fc38.x86_64 1674097663 2af61bff099ba092381fc3bcfad33abeb46e0bbd80d39957160ebeeeae6662af
+07:54:29,125 INF modules.payloads.payload.dnf.transaction_progress: Verifying: fedora-gpg-keys-39-0.1.noarch 1675892983 04db736a77296edd4099a9165d68560d52dbf2484d959f668b3b676d68581f97
+07:54:29,125 INF modules.payloads.payload.dnf.transaction_progress: Verifying: fedora-release-common-39-0.5.noarch 1678139717 69c9711600ede5bd00494ae8dafa400121de28f70cb4784f4546b8810c4b4cd3
+07:54:29,126 INF modules.payloads.payload.dnf.transaction_progress: Verifying: fedora-release-container-39-0.5.noarch 1678139717 fa502a99d38fbe559283f7d86ec029f535dd3808e9d95d703f718974e089c675
+07:54:29,127 INF modules.payloads.payload.dnf.transaction_progress: Verifying: fedora-release-identity-container-39-0.5.noarch 1678139717 617dafc89d2336389625a380219ddf3dba3e8f0192af9fe96f62a7047cc175f5
+07:54:29,128 INF modules.payloads.payload.dnf.transaction_progress: Verifying: fedora-repos-39-0.1.noarch 1675892983 8ecb72298a8b662ee1a17e7fb4e1d279d7fc64b358c9fdf9a568a965022b3f97
+07:54:29,129 INF modules.payloads.payload.dnf.transaction_progress: Verifying: fedora-repos-modular-39-0.1.noarch 1675892983 972b6cd69d4a5de2b42ea631762a8fb67dad9929388a2a84a03422fdea366e68
+07:54:29,130 INF modules.payloads.payload.dnf.transaction_progress: Verifying: fedora-repos-rawhide-39-0.1.noarch 1675892983 3908078cd7debb2b2e081a7ea30fdf598f702ba7e65db7159836403940ed2421
+07:54:29,131 INF modules.payloads.payload.dnf.transaction_progress: Verifying: fedora-repos-rawhide-modular-39-0.1.noarch 1675892983 a6eddeba57693006d1585bb2e34f660d35ee7135bf9145001c247e25da2b738f
+07:54:29,133 INF modules.payloads.payload.dnf.transaction_progress: Verifying: file-libs-5.44-2.fc39.x86_64 1675961526 e9d47d4f8c115837a086789d8da306a435a77f25789ebad06c110da407864f34
+07:54:29,134 INF modules.payloads.payload.dnf.transaction_progress: Verifying: filesystem-3.18-4.fc39.x86_64 1677000960 38e188b7682c3df92bcebd568812b4f0de6f35d785a7d3e568acc3e6e14c28c7
+07:54:29,134 INF modules.payloads.payload.dnf.transaction_progress: Verifying: findutils-1:4.9.0-3.fc38.x86_64 1674099292 dec19668dc6051323597760b1dcfba516e049d99f4d4faba181ab89bb76dfd26
+07:54:29,466 INF modules.payloads.payload.dnf.transaction_progress: Verifying: gawk-5.1.1-5.fc38.x86_64 1674504607 319b782e36d052581555edca137af6095cc1aaac007d9bdc1d963893085587c5
+07:54:29,466 INF modules.payloads.payload.dnf.transaction_progress: Verifying: gdbm-libs-1:1.23-3.fc38.x86_64 1674103373 212cb1084c3d5a05d12308d768417dd12678a860ccfc89c2f70dada566e11259
+07:54:29,467 INF modules.payloads.payload.dnf.transaction_progress: Verifying: glib2-2.75.4-2.fc39.x86_64 1678128149 36a64a62d2f251871c1616451befd54d2761448d668de0371e05a59a185c99c3
+07:54:29,471 INF modules.payloads.payload.dnf.transaction_progress: Verifying: glibc-2.37.9000-3.fc39.x86_64 1678156773 e911b2035148f19a606bdd11bbcca202e673b1e3d8c6dbff989b77b2ff761fd9
+07:54:29,472 INF modules.payloads.payload.dnf.transaction_progress: Verifying: glibc-common-2.37.9000-3.fc39.x86_64 1678156773 1573a247a3f3a89273c1bf230cd5a62196c5aa22ddf13d0c44684ff3ad78ca9b
+07:54:29,472 INF modules.payloads.payload.dnf.transaction_progress: Verifying: glibc-minimal-langpack-2.37.9000-3.fc39.x86_64 1678156773 4b30c7dc86e31ea87fcdbd58c9ee126c8af9a84bc8a23cf30858af5e8ae8c822
+07:54:29,473 INF modules.payloads.payload.dnf.transaction_progress: Verifying: gmp-1:6.2.1-4.fc38.x86_64 1674106204 b940446486f6dfaa2a7651fd9cf7050cae6171d75b7fca865fa8d58400c1a0c7
+07:54:29,473 INF modules.payloads.payload.dnf.transaction_progress: Verifying: gnupg2-2.4.0-3.fc39.x86_64 1678086203 4ef881ad8a2f683020cb4d49a4bac6a8947ca5f826266391da945834f95b42ce
+07:54:29,474 INF modules.payloads.payload.dnf.transaction_progress: Verifying: gnutls-3.8.0-3.fc39.x86_64 1678520366 e3d7753b1ab0a74908e45a734a5bfd6d4ae646b91a4ea345b7264eb5cdec784d
+07:54:29,474 INF modules.payloads.payload.dnf.transaction_progress: Verifying: gpgme-1.17.1-5.fc39.x86_64 1677855729 a8a381267845f761809f10b8d27db002a1a5c6b2b54bd6720fa0d921439268f1
+07:54:29,475 INF modules.payloads.payload.dnf.transaction_progress: Verifying: grep-3.9-1.fc39.x86_64 1678203477 1edd6d0c726af868fe64c6fb8e62b72e55dbad94ae0e3a835548aa1160f57bda
+07:54:29,475 INF modules.payloads.payload.dnf.transaction_progress: Verifying: gzip-1.12-3.fc38.x86_64 1674130608 2ee988694d3c875dcaa4741453ee07b4dc1da31205abb035065dbc7c8c72c0da
+07:54:29,476 INF modules.payloads.payload.dnf.transaction_progress: Verifying: ima-evm-utils-1.4-7.fc38.x86_64 1674134337 8e2016f65d87e1c489689bcaf3b6d4733f2c13755d74dbfd4efe03a3468fcf35
+07:54:29,476 INF modules.payloads.payload.dnf.transaction_progress: Verifying: json-c-0.16-4.fc38.x86_64 1674137587 d06140e05f5d7c831331260a898d83e5079a3ead0f4616925dd94da8a33e5ede
+07:54:29,476 INF modules.payloads.payload.dnf.transaction_progress: Verifying: keyutils-libs-1.6.1-6.fc38.x86_64 1674139816 a8003e886f65342e06c75edaef2bc54b1f313a9b19ba3d8b573b7b72a9583d87
+07:54:29,477 INF modules.payloads.payload.dnf.transaction_progress: Verifying: krb5-libs-1.20.1-9.fc39.x86_64 1676308116 96e794f0c3a2d542760e6584f792b76b187699f58e218ea84d1232d1f43ed0fe
+07:54:29,477 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libacl-2.3.1-6.fc38.x86_64 1675084646 2bd57ae89a0e8c2205bb8a043e605a445e1983834f1fe8d29edccb7ee8ecb0dd
+07:54:29,477 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libarchive-3.6.1-5.fc39.x86_64 1675970968 c4b337632153e008b8fcd39c5cafedb90fb03c6e765ebc610b0effb6e9409721
+07:54:29,478 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libassuan-2.5.5-6.fc38.x86_64 1674147114 13b6ee1aaadee8fc6ad6713f6fcca12d340d8b662c341ef11eb1bbca9f28b1d0
+07:54:29,478 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libattr-2.5.1-6.fc38.x86_64 1674081312 2a6b60b523093bc2c3f31a14618c3f168faf5b9088cb422e08c450af62292153
+07:54:29,479 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libb2-0.98.1-8.fc38.x86_64 1674147259 9dc90426b66ef657dd666b8cff6a8b79d97049940e04fe432c1679407d7190a0
+07:54:29,479 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libblkid-2.38.1-4.fc38.x86_64 1674281245 f07644af2a3529eac157814f85268a09d8697ceb068ebd564011789d7ca8391d
+07:54:29,480 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libbrotli-1.0.9-11.fc38.x86_64 1674084473 1437effaa1e9cef61e6d942b5e7e352965d33e44666805fd4107f660d7a825e9
+07:54:29,480 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libcap-2.48-6.fc38.x86_64 1674147447 e848c54481fef3a2afc80a5c38dfd580ec05d821d65361d48a989128c36e5aaf
+07:54:29,480 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libcap-ng-0.8.3-5.fc38.x86_64 1674147466 5a8b121b402d579ba941a7e47513e68ffce46211b252d022ceef6d38706f7328
+07:54:29,481 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libcom_err-1.46.5-4.fc38.x86_64 1674095064 7eee29c05014366ade22f339b3b064bdda71a02d76d833173127255e2bc87c8a
+07:54:29,482 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libcomps-0.1.19-1.fc39.x86_64 1677628996 6560c92ce0aa25d6a32a4f3ebac4c3a3713c88d14456f570da3159886152ef8a
+07:54:29,482 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libcurl-7.88.1-1.fc39.x86_64 1676901145 ccdcc7c5e8bdc1eda8407a6644dc5ed8f66b4915ad7e54c462373b4e8b7e5f19
+07:54:29,482 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libdb-5.3.28-55.fc38.x86_64 1674147988 24b6237f18f6e0643e96a882d3711b5e7411256fffc547ee1a4daa7da0a62f9d
+07:54:29,483 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libdnf-0.68.0-2.fc38.x86_64 1674148122 42e46182681bfe0c685d7e869949ef53cd6eb626394f170701763cf672b6a58f
+07:54:29,483 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libeconf-0.4.0-5.fc38.x86_64 1674148263 ed115185dd2524d6ad37c4e5a7c26c2ef11461ddd2d52a4e0c73c9b61963f709
+07:54:29,484 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libevent-2.1.12-8.fc38.x86_64 1674148490 0bb1b0d7fa1b5107c98636cc9046912b848e770eefa43161127392bb86ab4559
+07:54:29,484 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libffi-3.4.4-2.fc38.x86_64 1674148556 4cdee7e7f885d9efe8156bd86e644e2b45f34537870f30c17bbd5113e493b994
+07:54:29,484 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libfsverity-1.4-9.fc38.x86_64 1674101481 46ad13e6eff5121db286acced0da073331084546f13b832b64d3298b531549dd
+07:54:29,485 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libgcc-13.0.1-0.6.fc39.x86_64 1677956859 fe2f422d5c7b9940e4b6f5ba8df16a7f1a566469af6190b2e61b81e743bb570b
+07:54:29,485 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libgcrypt-1.10.1-7.fc38.x86_64 1674148777 f13a3ba0f10a4924a4ac460a506e45559421b392ecf5c2ee258661e19ed93941
+07:54:29,485 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libgomp-13.0.1-0.6.fc39.x86_64 1677956859 49e5cc3613a661ac06ba5c14513f4dd3d752b7a4b308a8ece3bdd81468cf2aa3
+07:54:29,486 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libgpg-error-1.46-2.fc38.x86_64 1674149361 3aa69b60ec18c1fc47367041aca9dea0582fa14b31c7bee12538c4106acce87f
+07:54:29,486 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libidn2-2.3.4-2.fc38.x86_64 1674149891 e24b40ad581933d9ca22b525c434777d90a46cb4c0b097c497c788e49fd946d4
+07:54:29,487 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libksba-1.6.3-2.fc38.x86_64 1674150593 7036d00dd6f881adb9e4870edfd5a1240f5b647084ed53be464cf8cc6d40c452
+07:54:29,487 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libmodulemd-2.14.0-5.fc38.x86_64 1674151445 858e728f42806ce65520953f756c178764c60e29e1a3fa1ea1e1eb95b14950b9
+07:54:29,487 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libmount-2.38.1-4.fc38.x86_64 1674281245 ea61e5c61c7df5d65ff43dfa34c3e6fc2420bd1e479d4e15519023c1b832e261
+07:54:29,488 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libnghttp2-1.52.0-1.fc39.x86_64 1676368127 893c52ea0bac3758fb0c61c6449a7204fb088193d5ad2f0480ab8ef7af40e59a
+07:54:29,488 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libnsl2-2.0.0-5.fc38.x86_64 1674152253 e88d40b14861564cbbf640d366076b5b381cc3a30d818930f043dfb3f158e68a
+07:54:29,488 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libpsl-0.21.2-2.fc38.x86_64 1674153727 8cb49ad623d30a9fbe923b31b0413732b22f8763ec719efdcb535a356a9d0d6b
+07:54:29,489 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libpwquality-1.4.5-3.fc38.x86_64 1675292291 893d2125cc10c36b67e5d04544015be0f27d5a99e2ac83ba14904219c5e15d68
+07:54:29,489 INF modules.payloads.payload.dnf.transaction_progress: Verifying: librepo-1.15.1-2.fc38.x86_64 1674154372 f18410a0d1d25049f39315372924c318314254cba55f2d3f24d0c28e31cbbbb5
+07:54:29,490 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libreport-filesystem-2.17.8-1.fc39.noarch 1677836477 c16cf2f6b3674554a1ddb180f7de37e09e5d400d103a4ca3d6bd3f7028a7c7d1
+07:54:29,491 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libselinux-3.5-1.fc39.x86_64 1677238335 a861e4c858fb8b7b246c9a5156780ef9188e5058b430a09d5274cf8154e4651b
+07:54:29,492 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libsemanage-3.5-1.fc39.x86_64 1677239972 a6cf83800141978f0b6f88a9cf218ddeaf84ad7459f2270f1bbf6da32f18d4cf
+07:54:29,492 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libsepol-3.5-1.fc39.x86_64 1677235980 a119520536c2d78fe4ab09fa36de55321fa5a926aca955640504d6fa7e98790b
+07:54:29,492 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libsigsegv-2.14-4.fc38.x86_64 1674155389 2f95ec8a9e82166735d2a0dad196caf86d3b03b1d751333664fdc49af04652e3
+07:54:29,493 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libsmartcols-2.38.1-4.fc38.x86_64 1674281245 10295dcfa946c6fb7b52c1b8781da4dc6c59dc8fc0e07bab2f3187fc1f143b9a
+07:54:29,494 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libsolv-0.7.22-4.fc38.x86_64 1674155829 8ac4cd82686478387e18d884e52254370152123a14a6476ece6810b78e0fc9fe
+07:54:29,494 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libssh-0.10.4-4.fc39.x86_64 1678049526 1ee7aaf7efddee4b3dcbad1e7b13f79c4ea58f40d6d0734a29dca359f540930d
+07:54:29,495 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libssh-config-0.10.4-4.fc39.noarch 1678049532 1bc707f6df0aac3eb69be6e32be2edb32c772c1afb63300577e72fcec472af54
+07:54:29,495 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libstdc++-13.0.1-0.6.fc39.x86_64 1677956859 4879018880886651208d90a74357ff33d9230f1cfe05a0c6efc21fcdfe21acba
+07:54:29,495 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libtasn1-4.19.0-2.fc38.x86_64 1674156773 755f70836736d33825f0ca0a30966364f9c47f336a9679647806efca38935468
+07:54:29,496 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libtirpc-1.3.3-1.fc38.x86_64 1674157234 633ce6404f6ac32892f2124fa9d8e511ed6d2e3c31d6c9fcb5f9f183416547ad
+07:54:29,496 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libunistring-1.1-3.fc38.x86_64 1674157761 2cf3c52adb539112d160d78ad0eb0536f41a4fc0087ca74043de59267ae397ac
+07:54:29,496 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libunistring1.0-1.0-1.fc38.x86_64 1674613554 a437f855037feb83c8388e0d7799050d178a0e33b72ca2b2845ade7182ad104a
+07:54:29,497 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libuuid-2.38.1-4.fc38.x86_64 1674281245 c05ae7b8c8c32ece4656d4aa296c383e9327168c1417232caca03612ff7f043e
+07:54:29,497 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libverto-0.3.2-5.fc38.x86_64 1674158149 a724e47d0afbe9ea8b8750ac8b1db8e1faad7cb77f7dc1907990789f5f5dec71
+07:54:29,498 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libxcrypt-4.4.33-7.fc39.x86_64 1675982257 71a9cbe5c77f55cac9084cbff178924e28b44981a53f82c66c3053521875c39b
+07:54:29,498 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libxml2-2.10.3-3.fc38.x86_64 1674159066 b9a9659d705cbafd77164f6e9aad0990c4f28822216f59750d3a6835815f688d
+07:54:29,498 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libyaml-0.2.5-9.fc38.x86_64 1674159211 dae1b79663b5e2810668f0b9350e5d62b64af07cf3e6a85da386b4accd08b699
+07:54:29,498 INF modules.payloads.payload.dnf.transaction_progress: Verifying: libzstd-1.5.4-1.fc39.x86_64 1676293839 e3fa33d2f4eb43a83bcf3ddc2775d0a7c272183a1ef6f2d5c0ff9cf95a983d73
+07:54:29,499 INF modules.payloads.payload.dnf.transaction_progress: Verifying: lua-libs-5.4.4-9.fc39.x86_64 1676405653 245491bf843da1571cd8b6f16ec3e9569c4b983bef02a28fd53e63a1fac9fa21
+07:54:29,499 INF modules.payloads.payload.dnf.transaction_progress: Verifying: lz4-libs-1.9.4-2.fc38.x86_64 1674162976 1a2dd2ddcf1ab7a789633d7a0f5890b0fe12c96ad3c88c7a5f8df547190fdb32
+07:54:29,499 INF modules.payloads.payload.dnf.transaction_progress: Verifying: mpdecimal-2.5.1-6.fc38.x86_64 1674568050 c98c47d647f33a5a552c0031d1c7b035a9f54a8a0ba64d220f1b90d4cb990926
+07:54:29,500 INF modules.payloads.payload.dnf.transaction_progress: Verifying: mpfr-4.1.1-3.fc38.x86_64 1674171531 4dce785f0955e4bc212f5642fbf76752e8e758fddaf31d423c76064442c382a4
+07:54:29,500 INF modules.payloads.payload.dnf.transaction_progress: Verifying: ncurses-base-6.4-3.20230114.fc38.noarch 1674172884 f5c2b7e34cd518428e2b57b97d53038a35112bfd7dcf70b99a362edf6df03174
+07:54:29,501 INF modules.payloads.payload.dnf.transaction_progress: Verifying: ncurses-libs-6.4-3.20230114.fc38.x86_64 1674172898 c611cb6193f4bb3971727d46a5f02a196d4d594fbc00ee76d22668e5f9eac477
+07:54:29,502 INF modules.payloads.payload.dnf.transaction_progress: Verifying: nettle-3.8-3.fc38.x86_64 1674173400 1ab436b853babb890810427c0906f401a8778570d9c106aae2a93dd689b56395
+07:54:29,502 INF modules.payloads.payload.dnf.transaction_progress: Verifying: npth-1.6-12.fc38.x86_64 1674174628 fdfcd7132d187c79dc0f3752e14f7b4e990a2390c9e62f119e648988403fd977
+07:54:29,502 INF modules.payloads.payload.dnf.transaction_progress: Verifying: openldap-2.6.4-1.fc39.x86_64 1677560683 665924d246f41013251f24cc626757abd2a932fb12c58c25d4e8bb005c36605f
+07:54:29,503 INF modules.payloads.payload.dnf.transaction_progress: Verifying: openssl-libs-1:3.0.8-1.fc39.x86_64 1675962243 bed6e9157e37283845bfd06b1f2e42b3b921e7f7c17786bd48fa535c3da17c15
+07:54:29,503 INF modules.payloads.payload.dnf.transaction_progress: Verifying: p11-kit-0.24.1-6.fc38.x86_64 1674178541 3d099f56457cac6b78d5a7fa1a288449b2fd40940ba79c38f3a8cdf72de08d0b
+07:54:29,503 INF modules.payloads.payload.dnf.transaction_progress: Verifying: p11-kit-trust-0.24.1-6.fc38.x86_64 1674178541 17ccfb5f326ac494420b346b6a19633f6a29666edff3bd2927b24a181c30043d
+07:54:29,503 INF modules.payloads.payload.dnf.transaction_progress: Verifying: pam-1.5.2-17.fc39.x86_64 1678094259 2759df9eae082382df537953d18a34d81203837669ec30d13d5e6c2ed1345ea3
+07:54:29,504 INF modules.payloads.payload.dnf.transaction_progress: Verifying: pam-libs-1.5.2-17.fc39.x86_64 1678094259 cf1084af759222796497ae1db44733d8572475170e706828af4d4c0c093a3da2
+07:54:29,505 INF modules.payloads.payload.dnf.transaction_progress: Verifying: pcre2-10.42-1.fc38.1.x86_64 1674179549 8e9d90ae76137486c9584ad0ff007348d83349fe97e29310659b13057dba78b4
+07:54:29,506 INF modules.payloads.payload.dnf.transaction_progress: Verifying: pcre2-syntax-10.42-1.fc38.1.noarch 1674179550 4f19a70d3fbf30ac298700d3918d7fb483a387adf3d08b96efaa07d51dd0b156
+07:54:29,506 INF modules.payloads.payload.dnf.transaction_progress: Verifying: popt-1.19-2.fc38.x86_64 1674209762 00c43379a70e7167e59f71d7da775489dc2f218c768cff68c1edc8e51f35c2c5
+07:54:29,507 INF modules.payloads.payload.dnf.transaction_progress: Verifying: publicsuffix-list-dafsa-20221208-2.fc38.noarch 1674211058 3cf03283e8e07e37763931446a599809c069fe25c20a0eb6dd6386f447673e06
+07:54:29,507 INF modules.payloads.payload.dnf.transaction_progress: Verifying: python-pip-wheel-23.0.1-1.fc39.noarch 1677163495 b0d44fc3728295b16ee16e3eea5981c56115ef494e0e1dbabc04670c3a99aad9
+07:54:29,508 INF modules.payloads.payload.dnf.transaction_progress: Verifying: python-setuptools-wheel-65.5.1-2.fc38.noarch 1674569230 54aa1a0699326aae0137529166df648a393331e99280ca10f77f6fc904caf9e4
+07:54:29,508 INF modules.payloads.payload.dnf.transaction_progress: Verifying: python3-3.11.2-1.fc39.x86_64 1676150569 9ed4609b92a2f2ecebed214447b4f3ba450a5e86e52209af421b45bdedface8c
+07:54:29,508 INF modules.payloads.payload.dnf.transaction_progress: Verifying: python3-dnf-4.14.0-2.fc38.noarch 1674092774 6db332925770df5aa4d3001b8e2a3a0f186fbebe0490c171a54979c7fcfbdb0e
+07:54:29,509 INF modules.payloads.payload.dnf.transaction_progress: Verifying: python3-gpg-1.17.1-5.fc39.x86_64 1677855729 bc92a7bbe2583b989f0aafea98d1e12c3e1c7f86707145237bb2c7c359af0ea5
+07:54:29,509 INF modules.payloads.payload.dnf.transaction_progress: Verifying: python3-hawkey-0.68.0-2.fc38.x86_64 1674148122 3aeae153e2766638275bd53c7eae554742abd112d19cbd97280a8a73da17ff71
+07:54:29,510 INF modules.payloads.payload.dnf.transaction_progress: Verifying: python3-libcomps-0.1.19-1.fc39.x86_64 1677628996 4f681573fef55f017cd82920f5bc86193103499a64b6dc60a7e7c63d2713a4bf
+07:54:29,510 INF modules.payloads.payload.dnf.transaction_progress: Verifying: python3-libdnf-0.68.0-2.fc38.x86_64 1674148122 8e133a1a5eeab8e27ee5a1912b5aa223be0e754b5b716637688ca1f92b174666
+07:54:29,510 INF modules.payloads.payload.dnf.transaction_progress: Verifying: python3-libs-3.11.2-1.fc39.x86_64 1676150569 1f8b50a8229265341fdefc8472f9d36897e6430439c159d6a3aa87e186f92f6a
+07:54:29,511 INF modules.payloads.payload.dnf.transaction_progress: Verifying: python3-rpm-4.18.0-11.fc39.x86_64 1676549769 ab38aa7848ca6f74dce1f38e8aa598fe5c291cb92dedbc0c02a6ee4354fc9ff6
+07:54:29,511 INF modules.payloads.payload.dnf.transaction_progress: Verifying: readline-8.2-3.fc38.x86_64 1674247147 1a878a4a0448222e0a34864ef4f3c8b674b05ef08a05ea992d9c50b3ecbae10d
+07:54:29,512 INF modules.payloads.payload.dnf.transaction_progress: Verifying: rootfiles-8.1-33.fc38.noarch 1674247108 af32ae5ea7304141a49a026b6d50cb0a4f00ec1f6db2fbcc59f78fcd8c345058
+07:54:29,512 INF modules.payloads.payload.dnf.transaction_progress: Verifying: rpm-4.18.0-11.fc39.x86_64 1676549769 8321f09000e84895f3ae6a52963761f2ab2a67fb36753a2d02f587f121e2b3ed
+07:54:29,512 INF modules.payloads.payload.dnf.transaction_progress: Verifying: rpm-build-libs-4.18.0-11.fc39.x86_64 1676549769 331acbb0c5893e89fdb278c15eaebbc7d8bb07bbb2ed9f25512ae76cb1d1944c
+07:54:29,513 INF modules.payloads.payload.dnf.transaction_progress: Verifying: rpm-libs-4.18.0-11.fc39.x86_64 1676549769 44c3fd81aa5de107c630c8ad571f225e5338450d24df4dcdf2de1b00f619ea20
+07:54:29,513 INF modules.payloads.payload.dnf.transaction_progress: Verifying: rpm-sequoia-1.3.0-1.fc39.x86_64 1678136915 d77c48d393ffada69140de4d0adb89cec02153c6884d5829d2ed30b422cde82b
+07:54:29,513 INF modules.payloads.payload.dnf.transaction_progress: Verifying: rpm-sign-libs-4.18.0-11.fc39.x86_64 1676549769 f7ad23cf45db9e826933e0134925de536630903718122e258a582ba2341bcec3
+07:54:29,514 INF modules.payloads.payload.dnf.transaction_progress: Verifying: sed-4.8-12.fc38.x86_64 1674272136 13767df6745449f9458b4097fd10cdc5a6f577f53a14cf4d3608052a9cb368a3
+07:54:29,514 INF modules.payloads.payload.dnf.transaction_progress: Verifying: setup-2.14.3-3.fc39.noarch 1676999235 e10c0ec1a70226866cd13c044cdb398d519fa28ae3f2cf5747b6ce799d3bd0c5
+07:54:29,514 INF modules.payloads.payload.dnf.transaction_progress: Verifying: shadow-utils-2:4.13-6.fc39.x86_64 1678101070 c8a2cbec7fc78f885cf077f6ee088e64634a48694b94e611ad57f9ee15314731
+07:54:29,515 INF modules.payloads.payload.dnf.transaction_progress: Verifying: sqlite-libs-3.40.1-2.fc38.x86_64 1674274148 e96e91ff1c7b0667539c2d00d1f674a4b97638bfe1b6bc2eb2dfeaa59c127f9f
+07:54:29,515 INF modules.payloads.payload.dnf.transaction_progress: Verifying: sudo-1.9.13-1.p2.fc39.x86_64 1677689868 2b6641ff1b6004fc04d0e60e2bd48ba431d6e401c6eb907aa74b83f921c8b32e
+07:54:29,516 INF modules.payloads.payload.dnf.transaction_progress: Verifying: systemd-libs-253.1-4.fc39.x86_64 1677871685 199b1cd22fe6fb5f3a1d8035dc4f6348486ce9f623618714085fe641221decd7
+07:54:29,516 INF modules.payloads.payload.dnf.transaction_progress: Verifying: tar-2:1.34-7.fc38.x86_64 1675349508 2aad30b0bfc8311f870d4276ad8380d49adc2b8a1faa604456cf5845082d2890
+07:54:29,516 INF modules.payloads.payload.dnf.transaction_progress: Verifying: tpm2-tss-4.0.1-3.fc38.x86_64 1674634446 d624895c7f19e23fb77b7f2ae21a9dcf0698820a3325ae5b1343f6bb612a178e
+07:54:29,517 INF modules.payloads.payload.dnf.transaction_progress: Verifying: tzdata-2022g-2.fc38.noarch 1674279710 e9f81f7b77e1011de9e9cf4c68a149aa70f4f33e2bfa394213396115eaf9a2d0
+07:54:29,517 INF modules.payloads.payload.dnf.transaction_progress: Verifying: util-linux-core-2.38.1-4.fc38.x86_64 1674281245 4901b670be1372e70460dfcf943bc9e1442c190f64778c865d5a18dda80b0efc
+07:54:29,518 INF modules.payloads.payload.dnf.transaction_progress: Verifying: vim-data-2:9.0.1367-1.fc39.noarch 1677740541 0ff9600456ccd8cd3aca0a2ea14ff736dad3d3fecf84d20ebb87d84dad120196
+07:54:29,518 INF modules.payloads.payload.dnf.transaction_progress: Verifying: vim-minimal-2:9.0.1367-1.fc39.x86_64 1677740531 f9b5265223bcdf66924edd59838555a4c06d307fb51f740a6a4981fc54d641f6
+07:54:29,518 INF modules.payloads.payload.dnf.transaction_progress: Verifying: xz-libs-5.4.1-1.fc38.x86_64 1674467882 80a1d66fcdf2572fb1583b3a2e8a342dc9375aa4205f002aa7d798df7011ffc5
+07:54:29,519 INF modules.payloads.payload.dnf.transaction_progress: Verifying: yum-4.14.0-2.fc38.noarch 1674092774 da48b378e1147c5e1644aaa4196b739aea8117d2735731f65a66d07ea15eebc7
+07:54:29,519 INF modules.payloads.payload.dnf.transaction_progress: Verifying: zchunk-libs-1.3.0-1.fc39.x86_64 1677337432 473274e5b2d2b84575bbb14a145efd15aa638ce14b543b66118bb90d55c3dc3c
+07:54:29,520 INF modules.payloads.payload.dnf.transaction_progress: Verifying: zlib-1.2.13-3.fc38.x86_64 1674289566 6fc47cd2f53b150153a3865c2fbd6b1c57fcc265fb3602b6f4f3883cf6ec64e2
+07:54:29,550 DBG modules.payloads.payload.dnf.dnf_manager: The transaction has ended.
+07:54:30,218 DBG modules.payloads.payload.dnf.dnf_manager: The transaction process exited with 0.
+07:54:30,220 INF modules.payloads.payload.dnf.installation: Removing downloaded packages from /mnt/sysroot/tmp/dnf.package.cache.
+07:54:30,221 INF installation: Queue started: Bootloader installation (7/16)
+07:54:30,272 INF installation: Queue started: Post-installation setup tasks (8/16)
+07:54:30,286 DBG modules.payloads.payload.dnf.installation: Installation of the repository is not allowed.
+07:54:30,286 DBG modules.payloads.payload.dnf.installation: Couldn't write koji-override-0.repo to the target system.
+07:54:30,315 INF modules.payloads.payload.dnf.installation: Importing GPG key to RPM database: /etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-39-unknown
+07:54:30,346 ERR modules.payloads.payload.dnf.installation: Failed to import the GPG key.
+07:54:30,551 DBG modules.payloads.payload.dnf.dnf_manager: The DNF base has been reset.
+07:54:30,585 DBG installation: Task completed: Installation queue (1/40) (34.8 s)
+07:54:30,585 INF installation: Task started: Configuration queue (2/40)
+07:54:30,586 INF installation: Queue started: Configuration queue (9/16)
+07:54:30,586 INF installation: Queue started: Installed system configuration (10/16)
+07:54:32,431 INF installation: Queue started: Network configuration (11/16)
+07:54:32,671 INF installation: Queue started: User creation (12/16)
+07:54:32,806 INF installation: Queue started: Anaconda addon configuration (13/16)
+07:54:32,807 INF installation: Queue started: Initramfs generation (14/16)
+07:54:32,837 INF installation: Queue started: Write configs and kickstarts (15/16)
+07:54:32,928 INF installation: Queue started: Post installation scripts (16/16)
+07:54:32,928 INF kickstart.script: Running kickstart %%post script(s)
+07:54:33,053 INF kickstart.script: All kickstart %%post script(s) have been run
