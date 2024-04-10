@@ -27,7 +27,7 @@ docker.sh 是用 Shell 写的一个简易的 docker，支持以下功能：
 ### 运行容器
 
 ```bash
-./docker.sh -c run -m 100M -C dreamland -I ubuntu1604 -P /bin/bash -n host -n none
+./docker.sh -m 100M -C dreamland -I ubuntu1604 -P /bin/bash -n host -n none
 ```
 
 
