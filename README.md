@@ -30,7 +30,7 @@ docker.sh 是用 Shell 写的一个简易的 docker，支持以下功能：
 
 ```bash
 # 克隆所需rootfs
-git clone --single-branch -b alpine-3.17.3  https://github.com/Paper-Dragon/rootfs images/alpine-3.17.3
+git clone --single-branch -b alpine-3.17.3  https://github.com/Paper-Dragon/docker-sh images/alpine-3.17.3
 
 
 chmod +x *.sh
