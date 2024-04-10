@@ -1,4 +1,4 @@
-# rootfs
+# Docker命令行版
 
 ## 介绍
 一些操作系统的rootfs，从Docker Image 中导出。
@@ -24,12 +24,14 @@ docker.sh 是用 Shell 写的一个简易的 docker，支持以下功能：
 * network namespace
 * iptables
 * volume [Furture]
-* 前台后台运行 [Furture]
+* 前台、后台运行 [Furture]
 
 ### 运行容器
 
 ```bash
+# 克隆所需rootfs
 git clone --single-branch -b alpine-3.17.3  https://github.com/Paper-Dragon/rootfs images/alpine-3.17.3
+
 chmod +x *.sh
 
 # ./docker.sh -m 容器内存大小 -C 容器名称 -I 镜像名称【需要与分支名一致】 -P /bin/bash -n none
