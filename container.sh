@@ -11,9 +11,24 @@ mount -t aufs -o dirs=$container/rwlayer:./images/$image none $container
 
 mkdir -p $container/old_root
 cd $container
+
+mount --make-rprivate /
+
 pivot_root . ./old_root
 
+# proc
+mkdir /proc && echo "/proc create success" || echo "/proc fs maybe fail"
 mount -t proc proc /proc
+
+# /sys
+mkdir /sys && echo "/sys create success" || echo "/sys fs maybe fail"
+mount -t sysfs sys /sys
+
+# /dev
+# mount -t tmpfs tmpfs /dev
+
+
+
 umount -l /old_root
 
 if test "$network" = bridge; then

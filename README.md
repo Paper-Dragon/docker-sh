@@ -9,7 +9,9 @@
 - 过程是 [change_rootfs.sh](change_rootfs.sh)
 
 ## docker.sh
-> modify from [docker.sh](https://github.com/pandengyang/docker.sh) ，功能
+> 一些代码 fork from [docker.sh](https://github.com/pandengyang/docker.sh) ，bug修复版本。
+
+### 功能
 
 docker.sh 是用 Shell 写的一个简易的 docker，支持以下功能：
 
@@ -27,7 +29,11 @@ docker.sh 是用 Shell 写的一个简易的 docker，支持以下功能：
 ### 运行容器
 
 ```bash
-./docker.sh -m 100M -C dreamland -I ubuntu1604 -P /bin/bash -n host -n none
+git clone --single-branch -b alpine-3.17.3  https://github.com/Paper-Dragon/rootfs images/alpine-3.17.3
+chmod +x *.sh
+
+# ./docker.sh -m 容器内存大小 -C 容器名称 -I 镜像名称【需要与分支名一致】 -P /bin/bash -n none
+./docker.sh -m 100M -C alpine-3.17.3 -I alpine-3.17.3 -P /bin/bash -n host
 ```
 
 
