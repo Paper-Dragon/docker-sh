@@ -22,7 +22,7 @@ docker.sh 是用 Shell 写的一个简易的 docker，支持以下功能：
 * network namespace
 * iptables
 * volume [Furture]
-* 
+* 前台后台运行 [Furture]
 
 ### 运行容器
 

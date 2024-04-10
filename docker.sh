@@ -10,7 +10,7 @@ usage () {
 	echo ""
 	echo "Options:"
 	# echo "		-c string	docker command"
-	echo "				(\"run\")"
+	# echo "				(\"run\")"
 	echo "		-m		memory"
 	echo "				(\"100M, 200M, 300M...\")"
 	echo "		-C string	container name"
