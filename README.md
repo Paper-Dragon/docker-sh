@@ -1,4 +1,4 @@
-# mini_bash
+# Mini Bash
 
 ## 介绍
 
@@ -11,6 +11,73 @@
 - 提取所有动态连接库
 - 封装为docker
 - docker作为镜像导入
+
+
+
+## 运行
+
+```bash
+docker run -it jockerdragon/mini_bash:5.0 bash
+```
+
+
+
+## 构建
+
+克隆单个分支
+
+```bash
+git clone --branch mini_bash --single-branch https://github.com/Paper-Dragon/docker-sh.git
+cd docker-sh/
+```
+
+
+
+打包为docker可识别的rootfs
+
+```bash
+tar -cvf ../bash.tar *
+cd ..
+ls -lh
+```
+
+压缩包近3.5M
+
+```bash
+-rw-r--r-- 1 root root 3.5M  4月 18 17:25 bash.tar
+```
+
+导入
+
+```bash
+docker import bash.tar jockerdragon/mini_bash:5.0
+sha256:7cc56da0013130d77639ffb0c137ac755d66dc39474d7321ae9642e7ebb1d0fb
+
+```
+
+运行和测试
+
+```bash
+# docker run -it jockerdragon/mini_bash:5.0 bash
+[I have no name!@71d003f24aed /]#
+!          ]]         break      command    coproc     done       esac       false      function   if         local      pushd      return     source     times      ulimit     wait
+./         alias      builtin    compgen    declare    echo       eval       fc         getopts    in         logout     pwd        select     suspend    trap       umask      while
+:          bash       caller     complete   dirs       elif       exec       fg         hash       jobs       mapfile    read       set        test       true       unalias    {
+[          bg         case       compopt    disown     else       exit       fi         help       kill       popd       readarray  shift      then       type       unset      }
+[[         bind       cd         continue   do         enable     export     for        history    let        printf     readonly   shopt      time       typeset    until
+[I have no name!@71d003f24aed /]# pwd
+/
+[I have no name!@71d003f24aed /]# times
+0m0.016s 0m0.016s
+0m0.002s 0m0.001s
+[I have no name!@71d003f24aed /]#
+```
+
+
+
+
+
+## 制作过程
 
 ```bash
 /lib/terminfo/x/xterm:/lib/terminfo/x/xterm
