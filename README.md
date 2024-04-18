@@ -1,5 +1,17 @@
 # mini_bash
 
+## 介绍
+
+突发奇想，做了一个无比小的容器，仅能维持shell的正常使用，无其他功能。但是吧，它确实是小，比官方宣称的busybox都要小。
+
+## 制作方法
+这个最小化容器制作方法是
+- 找到目标程序
+- 定位动态链接库
+- 提取所有动态连接库
+- 封装为docker
+- docker作为镜像导入
+
 ```bash
 /lib/terminfo/x/xterm:/lib/terminfo/x/xterm
 [root@k8s-master:~/bash-rootfs]# ldd */*/*
